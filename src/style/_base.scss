@@ -1,0 +1,130 @@
+$color_prime: #10439f;
+$color_second: #d17cd9;
+$color_dark: #171a20;
+$color_light: #f3f4f4;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Yekan, sans-serif;
+}
+
+@font-face {
+  font-family: Yekan;
+  src: url(../assets/Yekan_Regular.ttf);
+}
+
+body {
+  background: linear-gradient(
+    109.6deg,
+    #fff 30%,
+    rgba(161, 206, 255, 0.407) 50%,
+    #fff 70%
+  );
+}
+
+@mixin backgroundGradient($alpha) {
+  background: -webkit-linear-gradient(
+    to right,
+    rgba($color_dark, $alpha),
+    rgba($color_second, $alpha)
+  );
+  background: linear-gradient(
+    to right,
+    rgba($color_dark, $alpha),
+    rgba($color_second, $alpha)
+  );
+}
+
+.allunset {
+  all: unset !important;
+}
+.link {
+  @apply transition-all;
+  -webkit-box-shadow: inset 0 -2px 0 0 $color_prime;
+  -moz-box-shadow: inset 0 -2px 0 0 $color_prime;
+  box-shadow: inset 0 -2px 0 0 $color_prime;
+  &:hover {
+    @apply text-slate-50;
+    -webkit-box-shadow: inset 0 -22px 0 0 $color_prime;
+    -moz-box-shadow: inset 0 -22px 0 0 $color_prime;
+    box-shadow: inset 0 -22px 0 0 $color_prime;
+  }
+}
+.shadowAround {
+  box-shadow: inset 0px 0px 30px 30px rgba(black, 0.9);
+}
+.shadowFromTop {
+  background: linear-gradient(180deg, $color_dark -30%, transparent 100%);
+}
+.shadowFromBottom {
+  background: linear-gradient(0deg, $color_dark 0%, transparent 100%);
+}
+.fakeBorderDark {
+  box-shadow: 0 0 0 2px $color_dark inset;
+  -webkit-box-shadow: 0 0 0 2px $color_dark inset;
+  -moz-box-shadow: 0 0 0 2px $color_dark inset;
+}
+.fakeBorderLight {
+  box-shadow: 0 0 0 2px $color_light inset;
+  -webkit-box-shadow: 0 0 0 2px $color_light inset;
+  -moz-box-shadow: 0 0 0 2px $color_light inset;
+}
+.fakeBorderDark {
+  box-shadow: 0 0 0 2px $color_dark inset;
+  -webkit-box-shadow: 0 0 0 2px $color_dark inset;
+  -moz-box-shadow: 0 0 0 2px $color_dark inset;
+}
+.fakeBorderBlue {
+  box-shadow: 0 0 0 2px $color_prime inset;
+  -webkit-box-shadow: 0 0 0 2px $color_prime inset;
+  -moz-box-shadow: 0 0 0 2px $color_prime inset;
+}
+
+.displayTrans {
+  transition: visibility 1s, opacity 0.2s linear;
+}
+.checkWrapp {
+  .checkMark {
+    &::before {
+      content: " ";
+      transition: all 0.2s;
+      position: absolute;
+      display: block;
+      scale: 0;
+      top: 9px;
+      left: 4px;
+      width: 13px;
+      height: 2px;
+      background-color: $color_prime;
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      content: " ";
+      transition: all 0.2s;
+      position: absolute;
+      display: block;
+      scale: 0;
+      top: 10px;
+      left: 4px;
+      width: 2px;
+      height: 4px;
+      background-color: $color_prime;
+      transform: rotate(-30deg);
+    }
+  }
+
+  input {
+    &:checked {
+      ~ .checkMark {
+        &::after,
+        &::before {
+          scale: 1;
+        }
+      }
+    }
+  }
+}
