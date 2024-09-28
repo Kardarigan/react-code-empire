@@ -4,6 +4,7 @@ import {
   Top_Image_Section,
   Numbers,
   Overall,
+  Companies,
 } from "../comps/Portal";
 import Cover_1 from "../assets/painting_of_an_ancient_Persian_with_sassanid_helmet_thousanse_soldiers_while_their_coding_in_their_laptop_png(1).png";
 import Cover_2 from "../assets/painting_of_an_ancient_Persian_with_sassanid_helmet_thousans_soldiers_while_their_coding_in_their_laptop_in_front_of_the_perspolise_png.png";
@@ -23,6 +24,7 @@ const About = () => {
           describe="اینجا امپراتوری ای از کد هاست! امپراتوری کد دارای ارتشی در کدزدن های نخبه، مشاورین ماهر و آموزگارانی با تجربه است که برای افزایش کیفیت کسب و کار ها و همچنین بنای دیگر پادشاهی ها از هیچ میجنگند. این است امپراتوری کد..."
         />
         <Half thing={about.job} reverse />
+        <Companies />
         <Half thing={about.reagon} />
         <Top_Image_Section
           label="دسته ی یکم، لشگر تازه کار ها، درحال یافتن راهی برای وسط آوردن یک المنت"

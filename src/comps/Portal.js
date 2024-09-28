@@ -41,8 +41,10 @@ import { Loaded_Animation } from "./Commons/Loaded_Animation";
 import Contact_Us from "./Company/Contact_Us";
 import Contact_Info from "./Company/Contact_Info";
 import Not_Found from "../pages/Not_Found";
+import Companies from "./Company/Companies";
 
 export {
+  Companies,
   Not_Found,
   Contact_Info,
   Contact_Us,

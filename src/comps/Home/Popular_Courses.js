@@ -3,9 +3,16 @@ import { courses } from "../../data/Courses";
 import { Loaded_Animation } from "../Commons/Loaded_Animation";
 
 const Popular_Courses = () => {
-  const filteredCourses = courses
-    .filter((course) => course.rank == 1)
-    .slice(0, 3);
+  const filteredCourses = courses.filter((course) => course.rank < 4);
+
+  filteredCourses.sort((a, b) => a.rank - b.rank);
+
+  const reorderedCourses = [
+    filteredCourses[1],
+    filteredCourses[0],
+    filteredCourses[2],
+  ];
+
   const heights = ["h-20", "h-36", "h-28"];
 
   return (
@@ -14,7 +21,7 @@ const Popular_Courses = () => {
         <span className="halfbg-left">محبوبترین دوره ها</span>
       </h3>
       <div className="flex mt-12">
-        {filteredCourses.map((item, index) => {
+        {reorderedCourses.map((item, index) => {
           const { ref, className } = Loaded_Animation("h-0", heights[index]);
 
           const path = "/courses/" + item.path;
