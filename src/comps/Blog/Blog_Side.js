@@ -6,12 +6,11 @@ const Blog_Side = ({ author }) => {
   const latestBlogs = blogs.slice(-3).reverse();
 
   return (
-    <aside className="flex flex-col gap-y-5">
+    <aside className="grid gap-y-5 max-lg:mt-12">
       <section className="border-mac bg-blue-400 py-2 flex-seperate">
         <span className="text-slate-100">نویسنده :</span>
         <h5 className="text-slate-50">{author}</h5>
       </section>
-
       <section className="border-mac pt-2 pb-5">
         <h4 className="title">
           <i className="fa-solid fa-hashtag"></i> آخرین مطالب
@@ -37,11 +36,10 @@ const Blog_Side = ({ author }) => {
             );
           })}
         </div>
-        <Link to="/blog" className="w-full rounded-xl">
+        <Link to="/blog" className="w-full rounded-xl button button-dark">
           همه
         </Link>
       </section>
-
       <section className="border-mac py-2">
         <ul className="flex-seperate">
           {socialButtons.map((item, index) => {

@@ -322,40 +322,27 @@ export const companies = [
     href: "https://www.digikala.com/",
   },
   {
-    logo: "https://learnit.ir/_next/static/media/header-logo.9261cb71.svg",
-    href: "https://learnit.ir/",
-  },
-  {
-    logo: "https://myket.ir/core/images/logo/logo-en.png",
-    href: "https://myket.ir/",
-  },
-  {
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/MTN_Irancell_Logo.svg/512px-MTN_Irancell_Logo.svg.png?20231120112256",
-    href: "https://irancell.ir/",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Snapp%21_logo_%28English%29.svg/1920px-Snapp%21_logo_%28English%29.svg.png",
+    href: "https://snapp.ir/",
   },
   {
     logo: "https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/University_of_Tehran_logo.svg/316px-University_of_Tehran_logo.svg.png?20220304002911",
     href: "https://ut.ac.ir/fa",
   },
   {
-    logo: "https://mapnagroup.com/wp-content/uploads/2024/05/MAPNA-Group-Logo-EN-Horizontal-600-300x57.png",
-    href: "https://mapnagroup.com/",
+    logo: "https://cdn.otaghak.com/otg-images-new/Web/Icon/general/logotype-large.svg",
+    href: "https://www.otaghak.com/",
   },
   {
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Snapp%21_logo_%28English%29.svg/1920px-Snapp%21_logo_%28English%29.svg.png",
-    href: "https://snapp.ir/",
+    logo: "https://mapnagroup.com/wp-content/uploads/2024/05/MAPNA-Group-Logo-EN-Horizontal-600-300x57.png",
+    href: "https://mapnagroup.com/",
   },
   {
     logo: "https://cdn-a.flytoday.ir/upload/flytoday/public/white-labels/flytoday/images/logo.svg",
     href: "https://www.flytoday.ir/",
   },
   {
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Namava_logo.svg/1280px-Namava_logo.svg.png",
-    href: "https://www.namava.ir/",
-  },
-
-  {
-    logo: "https://cdn.otaghak.com/otg-images-new/Web/Icon/general/logotype-large.svg",
-    href: "https://www.otaghak.com/",
+    logo: "https://myket.ir/core/images/logo/logo-en.png",
+    href: "https://myket.ir/",
   },
 ];

@@ -44,3 +44,13 @@
   opacity: 0;
   pointer-events: none;
 }
+
+.splide__arrow {
+  @apply w-12 h-full button-light rounded-md transition-all;
+  &--next {
+    right: 0;
+  }
+  &--prev {
+    left: 0;
+  }
+}

@@ -87,7 +87,7 @@ const Navbar = () => {
       <section
         className={`displayTrans fixed ${
           hamburger ? "visible opacity-100" : "invisible opacity-0"
-        } w-screen h-[calc(100%-64px)] top-[64px] z-20 bg-slate-900`}
+        } w-screen h-[calc(100%-64px)] top-[60px] z-50 bg-slate-900`}
       >
         <Hamburger setHamburger={setHamburger} />
       </section>

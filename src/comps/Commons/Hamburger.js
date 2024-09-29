@@ -8,7 +8,7 @@ const Hamburger = ({ setHamburger }) => {
 
   return (
     <menu
-      className="text-slate-100 p-5 ps-9 flex flex-col justify-between h-full"
+      className="text-slate-100 p-5 ps-4 flex flex-col justify-between h-full"
       dir="rtl"
     >
       <ul className="grid gap-y-3">
