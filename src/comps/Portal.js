@@ -16,7 +16,7 @@ import Hero from "../comps/Commons/Hero";
 import Form from "./Commons/Form";
 import Tip from "./Commons/Tip";
 import Top_Image_Section from "./Commons/Top_Image_Section";
-import Numbers from "./Company/Numbers";
+import About_Numbers from "./Company/About_Numbers";
 import Blog_Overview from "./Blog/Blog_Overview";
 import Blog_Card from "./Blog/Blog_Card";
 import Single_Blog from "../pages/Single_Blog";
@@ -42,8 +42,10 @@ import Contact_Us from "./Company/Contact_Us";
 import Contact_Info from "./Company/Contact_Info";
 import Not_Found from "../pages/Not_Found";
 import Companies from "./Company/Companies";
+import About_Team from "./Company/About_Team";
 
 export {
+  About_Team,
   Companies,
   Not_Found,
   Contact_Info,
@@ -70,7 +72,7 @@ export {
   Blog_Overview,
   Blog_Card,
   Service,
-  Numbers,
+  About_Numbers,
   Top_Image_Section,
   Form,
   Tip,

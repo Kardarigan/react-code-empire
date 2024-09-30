@@ -3,6 +3,9 @@ import Persians_Parade from "../assets/persians_parade.jpg";
 import Persian_Coder_1 from "../assets/painting_of_an_ancient_Persian_with_sassanid_helmet_soldier_while_his_coding_in_his_laptop_png(1).png";
 import Persian_Coder_2 from "../assets/painting_of_an_ancient_parthian_imperial_philosophers_while_their_coding_in_their_laptop_in_front_perspolis_png.png";
 import Persian_Coder_3 from "../assets/painting_of_an_ancient_Persian_with_sassanid_helmet_thousanse_soldiers_while_their_coding_in_their_laptop_png.png";
+import Team_1 from "../assets/team/team_1.png";
+import Team_2 from "../assets/team/team_2.png";
+import Team_3 from "../assets/team/team_3.png";
 
 export const navLinks = [
   { href: "/", label: "خانه" },
@@ -344,5 +347,26 @@ export const companies = [
   {
     logo: "https://myket.ir/core/images/logo/logo-en.png",
     href: "https://myket.ir/",
+  },
+];
+
+export const teamMembers = [
+  {
+    name: "داریوش زاری",
+    role: "هم بنیانگزار و مدیرعامل",
+    profile: Team_1,
+    bio: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
+  },
+  {
+    name: "پارسا عربی",
+    role: "هم بنیانگزار و رئیس هیت مدیره",
+    profile: Team_2,
+    bio: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
+  },
+  {
+    name: "نام الکی",
+    role: "مدیر ارشد فنی",
+    profile: Team_3,
+    bio: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
   },
 ];
