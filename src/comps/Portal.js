@@ -1,3 +1,8 @@
+// hooks
+import { Loaded_Animation } from "./Commons/Loaded_Animation";
+import { Count_Animation } from "./Commons/Count_Animation";
+
+// components
 import Contact from "../pages/Contact";
 import About from "../pages/About";
 import Blog from "../pages/Blog";
@@ -37,7 +42,6 @@ import Courses_Section from "./Courses/Courses_Section";
 import Hamburger from "./Commons/Hamburger";
 import Popular_Courses from "./Home/Popular_Courses";
 import Instagram from "./Home/Instagram";
-import { Loaded_Animation } from "./Commons/Loaded_Animation";
 import Contact_Us from "./Company/Contact_Us";
 import Contact_Info from "./Company/Contact_Info";
 import Not_Found from "../pages/Not_Found";
@@ -45,6 +49,7 @@ import Companies from "./Company/Companies";
 import About_Team from "./Company/About_Team";
 
 export {
+  Count_Animation,
   About_Team,
   Companies,
   Not_Found,

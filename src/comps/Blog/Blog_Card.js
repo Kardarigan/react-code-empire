@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Loaded_Animation } from "../Commons/Loaded_Animation";
+import { Loaded_Animation } from "../Portal";
 
 const Blog_Card = ({ blog }) => {
   const { ref, className } = Loaded_Animation();

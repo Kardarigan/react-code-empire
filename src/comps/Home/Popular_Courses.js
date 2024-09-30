@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { courses } from "../../data/Courses";
-import { Loaded_Animation } from "../Commons/Loaded_Animation";
+import { Loaded_Animation } from "../Portal";
 
 const Popular_Courses = () => {
   const filteredCourses = courses.filter((course) => course.rank < 4);

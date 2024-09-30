@@ -39,6 +39,7 @@ const About = () => {
         <Half thing={about.idea} />
       </div>
       <About_Team />
+      <p className="label opacity-30 text-center">Long live the Empire</p>
       <Overall thing={about.overall} />
     </>
   );
