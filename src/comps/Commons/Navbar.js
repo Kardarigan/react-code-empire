@@ -46,7 +46,9 @@ const Navbar = () => {
       <header
         className={`${
           navbarBackground || hamburger ? "bg-slate-900 " : "bg-transparent"
-        } w-full md:px-5 opacity-95 fixed top-0 z-20 transition-all duration-300`}
+        } w-full md:px-5 fixed top-0 z-20 transition-all duration-300${
+          hamburger ? " opacity-100" : ""
+        }`}
       >
         <div className="mx-auto max-w-[1200px] flex-seperate max-md:px-5 text-slate-100 py-3">
           <Link to="/">
@@ -87,7 +89,7 @@ const Navbar = () => {
       <section
         className={`displayTrans fixed ${
           hamburger ? "visible opacity-100" : "invisible opacity-0"
-        } w-screen h-[calc(100%-64px)] top-[60px] z-50 bg-slate-900`}
+        } w-screen h-[calc(100%-60px)] top-[60px] left-0 right-0 z-50 bg-slate-900`}
       >
         <Hamburger setHamburger={setHamburger} />
       </section>

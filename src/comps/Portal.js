@@ -47,8 +47,12 @@ import Contact_Info from "./Company/Contact_Info";
 import Not_Found from "../pages/Not_Found";
 import Companies from "./Company/Companies";
 import About_Team from "./Company/About_Team";
+import Course_Benefits from "./Courses/Course_Benefits";
+import Benefit_Card from "./Courses/Benefit_Card";
 
 export {
+  Benefit_Card,
+  Course_Benefits,
   Count_Animation,
   About_Team,
   Companies,

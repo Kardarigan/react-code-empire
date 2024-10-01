@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
+import { Loaded_Animation } from "../Portal";
 
 const Course_Card = ({ thing }) => {
+  const { ref, className } = Loaded_Animation();
+
   return (
     <Link
+      ref={ref}
       to={thing.path}
-      className="text-center rounded-lg overflow-hidden transition-all group hover:scale-105"
+      className={`text-center rounded-lg overflow-hidden transition-all duration-300 group hover:scale-105 ${className}`}
     >
       <div
         className="h-[200px]"

@@ -64,7 +64,7 @@
       @apply md:text-xl text-lg font-bold;
     }
     &-lg {
-      @apply md:text-5xl text-2xl font-bold;
+      @apply md:text-5xl text-3xl font-bold;
     }
     &-super {
       @apply lg:text-7xl md:text-5xl text-2xl font-bold;
@@ -80,7 +80,7 @@
     @apply text-slate-700 md:text-sm text-xs font-bold;
   }
   .para {
-    @apply max-md:text-sm text-justify max-w-[800px];
+    @apply md:text-sm text-xs text-justify max-w-[800px];
   }
   .warn {
     @apply border-mac bg-blue-400 text-slate-50;
@@ -90,6 +90,9 @@
   }
   .box {
     @apply px-10 py-8 border-mac;
+  }
+  .card {
+    @apply bg-blue-700 border-2 border-slate-200 size-full flex p-12 rounded-xl;
   }
 }
 @layer utilities {
