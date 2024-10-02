@@ -30,7 +30,7 @@ const About_Team = () => {
                 <h4 className="font-thin md:text-sm text-[10px]">
                   {item.role}
                 </h4>
-                <p className="md:mt-20 mt-5 max-w-[80%] mx-auto md:text-sm text-xs absolute right-0 left-0">
+                <p className="lg:mt-20 mt-5 max-w-[80%] mx-auto md:text-sm text-xs absolute right-0 left-0">
                   {item.bio}
                 </p>
               </div>

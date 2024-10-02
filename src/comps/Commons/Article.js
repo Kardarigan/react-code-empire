@@ -37,7 +37,7 @@ const Article = ({ article }) => {
                 {item.title}
               </h2>
             )}
-            {item.paragraph.map((para, index) => {
+            {item.paragraph?.map((para, index) => {
               return (
                 <p
                   key={index}

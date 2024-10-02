@@ -49,8 +49,10 @@ import Companies from "./Company/Companies";
 import About_Team from "./Company/About_Team";
 import Course_Benefits from "./Courses/Course_Benefits";
 import Benefit_Card from "./Courses/Benefit_Card";
+import Learners_Rank from "./Courses/Learners_Rank";
 
 export {
+  Learners_Rank,
   Benefit_Card,
   Course_Benefits,
   Count_Animation,
