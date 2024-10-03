@@ -12,7 +12,7 @@ const Contact = () => {
       <Contact_Info />
       <section className="pagecenter pb-40">
         <h3 className="title text-center mb-5">
-          <span className="halfbg-left">فرم تماس با امپراتوری</span>
+          <span className="mac-bg">فرم تماس با امپراتوری</span>
         </h3>
         <Form fields={contactForm} />
         <Tip

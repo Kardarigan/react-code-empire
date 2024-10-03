@@ -6,7 +6,7 @@ const Learners_Rank = () => {
   return (
     <section className="container text-center px-5 padding-y">
       <h3 className="title-lg">
-        <span className="halfbg-right">برترین دانشجویان شهریور ماه</span>
+        <span className="mac-bg">برترین دانشجویان شهریور ماه</span>
       </h3>
       <div className="rounded-xl overflow-hidden mt-12 border-2 border-slate-500">
         <table class="w-full">

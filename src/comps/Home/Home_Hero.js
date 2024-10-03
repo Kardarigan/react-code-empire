@@ -32,8 +32,8 @@ const Home_Hero = () => {
             />
           </p>
           <div className="flex justify-center mt-10">
-            <Link to="/contact" className="button button-dark">
-              ارتباط با امپراتوری
+            <Link to="/courses" className="button button-light">
+              شرکت در دوره های امپراتوری
             </Link>
           </div>
         </div>

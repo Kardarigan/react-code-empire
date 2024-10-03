@@ -10,11 +10,11 @@ const Hero = ({ title, subtitle, light = false, background = false }) => {
     >
       <div
         className={`padding-x pt-36 pb-40 ${
-          background && "backdrop-blur-sm bg-blue-700 bg-opacity-30"
+          background && "backdrop-blur-sm bg-slate-950 bg-opacity-60"
         }`}
       >
         <h1 className={`title-lg ${!light && "text-slate-50"}`}>
-          <span className="halfbg-right">{title}</span>
+          <span className="mac-bg">{title}</span>
         </h1>
         <h3
           className={`font-thin mt-5 ${

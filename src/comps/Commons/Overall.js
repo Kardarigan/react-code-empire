@@ -8,7 +8,7 @@ const Overall = ({ thing, light = false }) => {
       }`}
     >
       <h2 className={`title-lg ${!light && "text-slate-50"}`}>
-        <span className="halfbg-right">{thing.title}</span>
+        <span className="mac-bg">{thing.title}</span>
       </h2>
       <p
         className={`max-md:text-xs my-5 ${

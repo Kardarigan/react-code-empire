@@ -20,14 +20,14 @@ const Contact_Us = () => {
   return (
     <section className="pagecenter">
       <h3 className="title text-center">
-        <span className="halfbg-left">راه های ارتباط با امپراتوری</span>
+        <span className="mac-bg">راه های ارتباط با امپراتوری</span>
       </h3>
-      <div className="flex max-md:flex-col mt-16 gap-x-32">
+      <div className="flex max-md:flex-col mt-10 gap-x-32 text-center">
         {links.map((item, index) => {
           return (
-            <div className={item.w} key={index}>
+            <div className={item.w + " mx-auto mt-6"} key={index}>
               <h5 className="title-sm">{item.title}</h5>
-              <ul className="flex gap-4 mt-5">
+              <ul className="flex justify-center gap-4 mt-5">
                 {item.list.map((item, index) => {
                   return (
                     <li key={index}>

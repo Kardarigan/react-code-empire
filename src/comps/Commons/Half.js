@@ -16,10 +16,8 @@ const Half = ({ thing, reverse = false }) => {
           <h3 className="title-super font-bold relative max-md:px-2">
             <span
               className={`absolute max-md:right-3 max-md:halfbg-left max-md:text-slate-50 ${
-                reverse
-                  ? "md:translate-x-[31%] md:halfbg-right"
-                  : "md:translate-x-[69%] md:halfbg-left"
-              } translate-y-[-150%] md:w-[150%]`}
+                reverse ? "md:left-0 md:halfbg-right" : "right-0 md:halfbg-left"
+              } translate-y-[-150%] text-nowrap`}
             >
               {thing.title}
             </span>

@@ -6,11 +6,11 @@ const Course_Benefits = () => {
     <section className="padding">
       <div className="pagecenter">
         <h3 className="title-lg text-center">
-          <span className="halfbg-right">سود دوره ی آنلاین خصوصی</span>
+          <span className="mac-bg">سود دوره ی آنلاین خصوصی</span>
         </h3>
         <p className="mt-12 para text-center">
-          دوره ی آنلاین برخلاف دوره های عادی نتیجه ی قابل اطمینان تری داره و
-          آینده ی پس از این دوره تضمین شده خواهد بود. چند تا از ویژگی هایی که
+          دوره ی آنلاین خصوصی برخلاف دوره های عادی نتیجه ی قابل اطمینان تری داره
+          و آینده ی پس از این دوره تضمین شده خواهد بود. چند تا از ویژگی هایی که
           سبب این برتری میشه رو این پایین برات توضیح دادیم:
         </p>
       </div>

@@ -102,7 +102,7 @@ const Blog_Overview = () => {
             ))}
           </select>
         </div>
-        <div className="flex py-2 gap-x-3 max-md:min-w-full border-mac rounded-full bg-blue-400 text-blue-50">
+        <div className="flex py-2 gap-x-3 max-md:min-w-full mac-border rounded-full bg-blue-400 text-blue-50">
           <button onClick={handleSearch}>
             <i className="fas fa-magnifying-glass"></i>
           </button>

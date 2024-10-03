@@ -38,7 +38,7 @@
       @apply text-slate-900 bg-slate-100 bg-opacity-70 hover:bg-opacity-80;
     }
     &-dark {
-      @apply text-slate-100 bg-slate-800 bg-opacity-70 hover:bg-opacity-80;
+      @apply text-slate-100 bg-slate-950 bg-opacity-70 hover:bg-opacity-80;
     }
     &-blue {
       @apply text-slate-100 bg-blue-500 bg-opacity-70 hover:bg-opacity-80;
@@ -83,13 +83,25 @@
     @apply md:text-sm text-xs text-justify max-w-[800px];
   }
   .warn {
-    @apply border-mac bg-blue-400 text-slate-50;
+    @apply mac-border bg-blue-400 text-slate-50;
   }
-  .border-mac {
-    @apply border-2 border-blue-400 rounded-[25px] px-4;
+  .mac {
+    &-border {
+      @apply border-2 border-blue-400 rounded-[25px] px-4;
+    }
+    &-bg {
+      background: rgb(135, 76, 204);
+      background: linear-gradient(
+        90deg,
+        rgba(135, 76, 204, 1) 0%,
+        rgba(135, 76, 204, 0.3537146931950568) 68%,
+        rgba(135, 76, 204, 0.20976369778923742) 100%
+      );
+      @apply px-5 rounded-full;
+    }
   }
   .box {
-    @apply px-10 py-8 border-mac;
+    @apply px-10 py-8 mac-border;
   }
   .card {
     @apply bg-blue-700 border-2 border-slate-200 size-full flex p-12 rounded-xl;

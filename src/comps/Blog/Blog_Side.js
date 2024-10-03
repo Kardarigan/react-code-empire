@@ -7,11 +7,11 @@ const Blog_Side = ({ author }) => {
 
   return (
     <aside className="grid gap-y-5 max-lg:mt-12">
-      <section className="border-mac bg-blue-400 py-2 flex-seperate">
+      <section className="mac-border bg-blue-400 py-2 flex-seperate">
         <span className="text-slate-100">نویسنده :</span>
         <h5 className="text-slate-50">{author}</h5>
       </section>
-      <section className="border-mac pt-2 pb-5">
+      <section className="mac-border pt-2 pb-5">
         <h4 className="title">
           <i className="fa-solid fa-hashtag"></i> آخرین مطالب
         </h4>
@@ -40,7 +40,7 @@ const Blog_Side = ({ author }) => {
           همه
         </Link>
       </section>
-      <section className="border-mac py-2">
+      <section className="mac-border py-2">
         <ul className="flex-seperate">
           {socialButtons.map((item, index) => {
             return (
