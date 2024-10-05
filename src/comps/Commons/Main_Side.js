@@ -11,16 +11,14 @@ const Main_Side = ({ details, link, price = false, capacity = false }) => {
         <section
           className={`py-3 warn flex-seperate ${
             capacity == 0
-              ? "border-red-500 bg-red-500"
+              ? "border-red-500 bg-red-500 text-slate-50"
               : capacity < 10
-              ? "border-yellow-500 bg-yellow-500"
-              : ""
+              ? "border-yellow-400 bg-yellow-400 text-slate-900"
+              : "text-slate-50"
           }`}
         >
-          <h5 className="text-slate-200">ظرفیت دوره :</h5>
-          <h5 className="text-slate-50">
-            {capacity > 0 ? `${capacity} نفر` : "ظرفیت پر شد"}
-          </h5>
+          <h5>ظرفیت دوره :</h5>
+          <h5>{capacity > 0 ? `${capacity} نفر` : "ظرفیت پر شد"}</h5>
         </section>
       )}
       <section className="warn pt-2 pb-5">
@@ -30,7 +28,7 @@ const Main_Side = ({ details, link, price = false, capacity = false }) => {
         <ul className="grid gap-y-3 mt-5">
           {details.map((item, index) => {
             return (
-              <li className="flex-seperate warn bg-blue-300" key={index}>
+              <li className="flex-seperate warn bg-blue-400" key={index}>
                 <span className="font-bold">{item.label} :</span>
                 <span>{item.describe}</span>
               </li>

@@ -26,7 +26,7 @@ const Article = ({ article }) => {
                   <img
                     src={item.cover}
                     alt={item.title}
-                    className="bg-fullobject rounded"
+                    className="bg-fullobject rounded w-full max-h-[60vh]"
                   />
                 )}
               </div>
