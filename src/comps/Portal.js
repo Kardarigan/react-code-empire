@@ -6,7 +6,6 @@ import { Count_Animation } from "./Commons/Count_Animation";
 import Contact from "../pages/Contact";
 import About from "../pages/About";
 import Blog from "../pages/Blog";
-import Policy from "../pages/Policy";
 import Service from "../pages/Service";
 import Home from "../pages/Home";
 import Layout from "./Layout";
@@ -50,8 +49,14 @@ import About_Team from "./Company/About_Team";
 import Course_Benefits from "./Courses/Course_Benefits";
 import Benefit_Card from "./Courses/Benefit_Card";
 import Learners_Rank from "./Courses/Learners_Rank";
+import Rules from "../pages/Rules";
+import Single_Rule from "../pages/Single_Rule";
+import Rules_Overview from "./Company/Rules_Overview";
 
 export {
+  Rules_Overview,
+  Rules,
+  Single_Rule,
   Learners_Rank,
   Benefit_Card,
   Course_Benefits,
@@ -89,7 +94,6 @@ export {
   Tip,
   About,
   Blog,
-  Policy,
   Contact,
   Overall,
   Navbar,

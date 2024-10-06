@@ -39,12 +39,12 @@ export const hamburgerLinks = [
     href: "/courses",
     label: "دوره ها",
   },
-  { href: "/privacy", label: "قوانین" },
+  { href: "/policy", label: "قوانین" },
   { href: "/contact", label: "ارتباط باما" },
 ];
 
 export const footLinks = [
-  { href: "/privacy", label: "قوانین" },
+  { href: "/policy", label: "قوانین" },
   { href: "/contact", label: "ارتباط باما" },
   { href: "/about", label: "Code Empire © 2024" },
 ];

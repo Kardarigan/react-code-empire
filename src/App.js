@@ -4,7 +4,6 @@ import {
   Home,
   About,
   Blog,
-  Policy,
   Contact,
   Service,
   Single_Blog,
@@ -13,6 +12,8 @@ import {
   Single_Course,
   Course_Form,
   Not_Found,
+  Rules,
+  Single_Rule,
 } from "./comps/Portal";
 
 function App() {
@@ -24,11 +25,11 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:blog" element={<Single_Blog />} />
-          <Route path="/policy" element={<Policy />} />
-          <Route path="/policy" element={<Policy />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/service" element={<Service />} />
           <Route path="/service/:service" element={<Single_Service />} />
+          <Route path="/policy" element={<Rules />} />
+          <Route path="/policy/:rule" element={<Single_Rule />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/courses/:course" element={<Single_Course />} />
           <Route path="/courses/register-form" element={<Course_Form />} />

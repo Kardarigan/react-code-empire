@@ -1,4 +1,4 @@
-const Article = ({ article }) => {
+const Article = ({ article, icons = true, gap = "gap-y-24" }) => {
   const makeBold = (text) => {
     const index = text.indexOf(":");
     if (index === -1) {
@@ -8,7 +8,7 @@ const Article = ({ article }) => {
   };
 
   return (
-    <article className="grid gap-y-24">
+    <article className={`grid ${gap}`}>
       {article.map((item, index) => {
         return (
           <section key={index}>
@@ -33,7 +33,9 @@ const Article = ({ article }) => {
             )}
             {item.title && (
               <h2 className="title halfbg-left inline">
-                <i className="fa-solid fa-hashtag text-purple-500 me-2" />
+                {icons && (
+                  <i className="fa-solid fa-hashtag text-purple-500 me-2" />
+                )}
                 {item.title}
               </h2>
             )}
