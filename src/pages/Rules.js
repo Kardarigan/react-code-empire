@@ -1,5 +1,6 @@
 import Rules_Overview from "../comps/Company/Rules_Overview";
-import { Hero } from "../comps/Portal";
+import { Hero, Overall } from "../comps/Portal";
+import { policyOverall } from "../data/Constants";
 
 const Rules = () => {
   return (
@@ -13,6 +14,7 @@ const Rules = () => {
         بخوانید. از توجه شما سپاسگزاریم.
       </p>
       <Rules_Overview />
+      <Overall thing={policyOverall} />
     </>
   );
 };

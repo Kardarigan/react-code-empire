@@ -52,8 +52,12 @@ import Learners_Rank from "./Courses/Learners_Rank";
 import Rules from "../pages/Rules";
 import Single_Rule from "../pages/Single_Rule";
 import Rules_Overview from "./Company/Rules_Overview";
+import Scroll from "./Commons/Scroll";
+import Rules_Scroll from "./Company/Rules_Scroll";
 
 export {
+  Rules_Scroll,
+  Scroll,
   Rules_Overview,
   Rules,
   Single_Rule,

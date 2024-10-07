@@ -81,6 +81,9 @@
   }
   .para {
     @apply md:text-sm text-xs text-justify max-w-[800px];
+    &-sm {
+      @apply md:text-xs text-[8px] text-justify max-w-[800px];
+    }
   }
   .warn {
     @apply mac-border bg-blue-500 text-slate-50;

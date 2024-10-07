@@ -54,3 +54,21 @@
     left: 0;
   }
 }
+
+.scroll {
+  @apply w-full text-center;
+  &-main {
+    @apply bg-blue-800 border-blue-950 mx-4 overflow-hidden text-slate-100;
+  }
+  &-end {
+    @apply bg-blue-950 border-4 border-blue-800 h-10 relative;
+    &::after {
+      content: " ";
+      @apply bg-blue-950 top-[-10px] border-4 border-blue-800 rounded-3xl absolute left-[-5px] block w-5 h-14;
+    }
+    &::before {
+      content: " ";
+      @apply bg-blue-950 top-[-10px] border-4 border-blue-800 rounded-3xl absolute right-[-5px] block w-5 h-14;
+    }
+  }
+}
