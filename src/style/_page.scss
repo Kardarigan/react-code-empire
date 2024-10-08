@@ -61,14 +61,52 @@
     @apply bg-blue-800 border-blue-950 mx-4 overflow-hidden text-slate-100;
   }
   &-end {
-    @apply bg-blue-950 border-4 border-blue-800 h-10 relative;
+    @apply thatch h-10 relative;
     &::after {
-      content: " ";
-      @apply bg-blue-950 top-[-10px] border-4 border-blue-800 rounded-3xl absolute left-[-5px] block w-5 h-14;
+      content: "";
+      @apply thatch top-[-10px] rounded-3xl absolute left-[-5px] block w-5 h-14;
     }
     &::before {
-      content: " ";
-      @apply bg-blue-950 top-[-10px] border-4 border-blue-800 rounded-3xl absolute right-[-5px] block w-5 h-14;
+      content: "";
+      @apply thatch top-[-10px] rounded-3xl absolute right-[-5px] block w-5 h-14;
+    }
+  }
+}
+
+.stand {
+  @apply relative;
+
+  &::after {
+    content: "";
+    @extend .snipCorner;
+    @extend .snipCorner-bot;
+    @apply block w-full absolute bottom-0 transition-all;
+  }
+  &-column {
+    @apply thatch absolute w-[80%] translate-x-[-12.5%] h-full;
+    &::before {
+      content: "";
+      @apply thatch block w-[110%] h-8 absolute translate-x-[4.5%] translate-y-[-1rem];
+    }
+    &::after {
+      content: "";
+      @apply thatch block w-[120%] h-10 absolute translate-x-[8.5%] translate-y-[-2.5rem];
+    }
+  }
+  &-found {
+    @apply thatch md:w-[110%] w-[100%] md:translate-x-[5%] md:rounded-t-lg h-16 relative;
+    &::after,
+    &::before {
+      content: "";
+      @apply rounded-t-lg block h-14 thatch;
+    }
+    &::after {
+      content: "";
+      @apply thatch max-md:hidden w-[115%] translate-y-[3rem] translate-x-[6%];
+    }
+    &::before {
+      content: "";
+      @apply thatch md:w-[110%] w-[105%] translate-y-[57px] md:translate-x-[4%] translate-x-[2.5%];
     }
   }
 }

@@ -83,7 +83,7 @@ body {
   -moz-box-shadow: 0 0 0 2px $color_prime inset;
 }
 
-.displayTrans {
+.shaped .displayTrans {
   transition: visibility 1s, opacity 0.2s linear;
 }
 .checkWrapp {
@@ -126,5 +126,16 @@ body {
         }
       }
     }
+  }
+}
+
+.snipCorner {
+  @apply border-x-transparent border-x-[20px];
+
+  &-bot {
+    @apply border-b-[20px] border-b-blue-950;
+  }
+  &-top {
+    @apply border-t-[20px] border-t-blue-950;
   }
 }

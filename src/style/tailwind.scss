@@ -103,6 +103,9 @@
       @apply px-5 rounded-full;
     }
   }
+  .thatch {
+    @apply bg-blue-950 border-2 border-blue-800;
+  }
   .box {
     @apply px-10 py-8 mac-border;
   }
