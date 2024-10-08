@@ -83,7 +83,7 @@
     @apply block w-full absolute bottom-0 transition-all;
   }
   &-column {
-    @apply thatch absolute w-[80%] translate-x-[-12.5%] h-full;
+    @apply thatch absolute w-[80%] translate-x-[-12.5%] h-3/5;
     &::before {
       content: "";
       @apply thatch block w-[110%] h-8 absolute translate-x-[4.5%] translate-y-[-1rem];
@@ -94,19 +94,19 @@
     }
   }
   &-found {
-    @apply thatch md:w-[110%] w-[100%] md:translate-x-[5%] md:rounded-t-lg h-16 relative;
+    @apply thatch md:w-[110%] w-[100%] md:translate-x-[5%] md:rounded-t-lg h-10 relative;
     &::after,
     &::before {
       content: "";
-      @apply rounded-t-lg block h-14 thatch;
+      @apply rounded-t-lg block h-10 thatch;
     }
     &::after {
       content: "";
-      @apply thatch max-md:hidden w-[115%] translate-y-[3rem] translate-x-[6%];
+      @apply thatch max-md:hidden w-[115%] translate-y-[2rem] translate-x-[6%];
     }
     &::before {
       content: "";
-      @apply thatch md:w-[110%] w-[105%] translate-y-[57px] md:translate-x-[4%] translate-x-[2.5%];
+      @apply thatch md:w-[105%] w-[105%] translate-y-[35px] md:translate-x-[4%] translate-x-[2.5%];
     }
   }
 }

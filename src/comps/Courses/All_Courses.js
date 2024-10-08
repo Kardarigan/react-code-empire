@@ -27,7 +27,12 @@ const All_Courses = () => {
 
   return (
     <section className="container padding-t padding-x">
-      <Tip message={"تمام دوره ها بر اساس آخرین بروزرسانی ها میباشند"} blue />
+      <Tip
+        message={
+          "تمام دوره ها (همچنین در طول دوره) با آخرین نسخه های هر تکنولوژی بروزرسانی میشوند"
+        }
+        blue
+      />
       {theAllCourses.map((course, index) => {
         return <Courses_Section course={course} key={index} />;
       })}

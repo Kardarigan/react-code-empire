@@ -8,10 +8,10 @@ const Blog_Card = ({ blog }) => {
     <Link
       ref={ref}
       to={"/blog/" + blog.title}
-      className={`overflow-hidden rounded-2xl border-4 border-blue-400 group relative ${className}`}
+      className={`overflow-hidden rounded-2xl border-4 border-blue-500 group relative ${className}`}
     >
       <p className="absolute text-end w-full">
-        <span className="bg-blue-400 px-2 py-1 rounded-br-lg">
+        <span className="bg-blue-500 px-2 py-1 rounded-br-lg">
           {blog.category}
         </span>
       </p>

@@ -16,7 +16,7 @@ const Services = ({ homepage = false }) => {
             <div className="flex-fullcenter min-h-[200px]" key={item.title}>
               <Link
                 to={"/service/" + item.path}
-                className="size-full bg-blue-500 border-4 shadow-lg rounded-3xl border-slate-100 transition-all duration-300 backdrop-blur hover:scale-105 flex flex-col justify-between overflow-hidden group"
+                className="size-full bg-blue-600 border-4 shadow-lg rounded-3xl border-slate-100 transition-all duration-300 backdrop-blur hover:scale-105 flex flex-col justify-between overflow-hidden group"
               >
                 <div className="p-5 relative transition-all text-slate-50">
                   <div className="md:text-3xl md:my-5 flex items-center transition-all md:group-hover:text-xl md:group-hover:my-0">
@@ -27,7 +27,7 @@ const Services = ({ homepage = false }) => {
                     {item.describe}
                   </p>
                 </div>
-                <div className="relative border-t-4 border-slate-100 inline-flex items-center justify-start py-3 pl-4 pr-12 font-bold text-blue-500 transition-all hover:pl-10 hover:pr-6 bg-slate-100 group/lets">
+                <div className="relative border-t-4 border-slate-100 inline-flex items-center justify-start py-3 pl-4 pr-12 font-bold text-blue-600 transition-all hover:pl-10 hover:pr-6 bg-slate-100 group/lets">
                   <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-150 ease-in-out bg-purple-400 group-hover/lets:h-full"></span>
                   <span className="absolute text-slate-950 right-0 pr-4 duration-200 ease-out group-hover/lets:translate-x-12">
                     <i className="fal fa-chevron-right" />

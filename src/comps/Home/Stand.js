@@ -10,18 +10,14 @@ const Stand = ({ thing, index }) => {
       <div ref={ref} className={`stand ${className}`}>
         <Link
           to={path}
-          className="text-center text-slate-100 translate-y-[-110%] block"
+          className="text-center text-slate-100 translate-y-[-20%] py-8 block mx-8 rounded-lg"
           style={{
             backgroundColor: thing.color[0],
             background: `-webkit-linear-gradient(0deg, ${thing.color[0]} 0%, ${thing.color[1]} 100%)`,
-            WebkitBackgroundClip: "text",
-            backgroundClip: "text",
-            color: "transparent",
           }}
         >
-          <h2 className="title-res shadow-xl">
-            {thing.title} <span className="para">{thing.persianTitle}</span>
-          </h2>
+          <h2 className="title-res drop-shadow-2xl">{thing.title}</h2>
+          <h2 className="para text-center">{thing.persianTitle}</h2>
         </Link>
         <div className="stand-column" />
       </div>

@@ -3,7 +3,7 @@ const Tip = ({ message, className, blue = false }) => {
     <div
       className={`${
         blue ? "bg-blue-400" : "bg-purple-400"
-      } w-full inline-flex justify-between items-center para-sm rounded-full text-slate-50 p-3 ${className}`}
+      } w-full inline-flex justify-between items-center para rounded-full text-slate-50 p-3 ${className}`}
     >
       <span
         className={`${
