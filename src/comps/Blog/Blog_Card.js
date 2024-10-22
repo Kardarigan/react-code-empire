@@ -18,7 +18,7 @@ const Blog_Card = ({ blog }) => {
       <div className="h-[300px] w-full">
         <img src={blog.cover} alt={blog.title} className="bg-fullobject" />
       </div>
-      <div className="px-3 py-1 absolute bottom-0 transition-all bg-white/55 backdrop-blur-sm rounded-t-lg group-hover:pb-8">
+      <div className="px-3 py-1 absolute bottom-0 transition-all bg-white/55 backdrop-blur-sm rounded-t-lg md:group-hover:pb-8 max-md:pb-8">
         <h3 className="md:text-3xl text-xl flex items-center transition-all md:group-hover:text-xl">
           {blog.title}
         </h3>

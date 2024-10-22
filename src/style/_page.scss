@@ -102,11 +102,11 @@
     }
     &::after {
       content: "";
-      @apply thatch max-md:hidden w-[115%] translate-y-[2rem] translate-x-[6%];
+      @apply thatch max-md:hidden w-[107%] translate-y-[2rem] translate-x-[3.5%];
     }
     &::before {
       content: "";
-      @apply thatch md:w-[105%] w-[105%] translate-y-[35px] md:translate-x-[4%] translate-x-[2.5%];
+      @apply thatch md:w-[104%] w-[104%] translate-y-[35px] md:translate-x-[2%] translate-x-[2%];
     }
   }
 }

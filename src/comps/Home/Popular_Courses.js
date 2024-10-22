@@ -17,7 +17,7 @@ const Popular_Courses = () => {
       <h3 className="title-lg text-center">
         <span className="mac-bg">محبوبترین دوره ها</span>
       </h3>
-      <div className="flex mt-12 gap-x-12">
+      <div className="flex mt-12 md:gap-x-12">
         {reorderedCourses.map((item, index) => {
           return <Stand thing={item} index={index} key={index} />;
         })}

@@ -9,8 +9,8 @@ const Single_Service = () => {
   return (
     <>
       <Hero title={theService.title} background={theService.cover} />
-      <section className="grid md:grid-cols-5 gap-8 container padding">
-        <div className="md:col-span-3">
+      <section className="grid md:grid-cols-5 gap-8 container padding-x padding-t pb-44">
+        <div className="md:col-span-3 mb-12">
           <Availability available={theService.availability} />
           <Article article={theService.paragraphs} />
         </div>
