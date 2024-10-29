@@ -25,8 +25,8 @@ const Single_Course = () => {
   return (
     <>
       <Hero title={theCourse.title} subtitle={subtitle} />
-      <section className="grid md:grid-cols-5 gap-8 container padding-x padding-t pb-60">
-        <div className="md:col-span-3 pb-12 grid gap-y-12">
+      <section className="grid md:grid-cols-5 gap-8 container padding-x padding-t pb-60 relative">
+        <div className="md:col-span-3 max-md:pb-12 grid gap-y-12">
           <Article article={theCourse.paragraphs} />
           <FAQ questions={theCourse.faq} />
         </div>
@@ -38,7 +38,7 @@ const Single_Course = () => {
         />
       </section>
       <button
-        className={`fixed bottom-16 z-20 left-10 button-dark rounded title-sm w-52 h-12 displayTrans ${
+        className={`md:hidden fixed bottom-16 z-20 left-10 button-dark rounded title-sm w-52 h-12 displayTrans ${
           showRegisterButton ? "visible opacity-100" : "invisible opacity-0"
         }`}
         onClick={() => window.scrollTo(0, 0)}
