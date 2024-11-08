@@ -387,3 +387,21 @@ export const policyOverall = {
     },
   ],
 };
+
+export const shareButtons = [
+  {
+    title: "همرسانی با واتساپ",
+    icon: "fa-brands fa-whatsapp",
+    href: "whatsapp://send?text=",
+  },
+  {
+    title: "همرسانی با اینستاگرام",
+    icon: "fa-brands fa-instagram",
+    href: "https://www.instagram.com/?url=",
+  },
+  {
+    title: "همرسانی با تلگرام",
+    icon: "fa-brands fa-telegram",
+    href: "https://t.me/share/url?url=",
+  },
+];

@@ -9,7 +9,7 @@ const Learners_Rank = () => {
         <span className="mac-bg">برترین دانشجویان شهریور ماه</span>
       </h3>
       <div className="rounded-xl overflow-hidden mt-12 border-2 border-slate-500">
-        <table class="w-full">
+        <table className="w-full">
           <thead className="bg-slate-900 text-slate-100">
             <tr>
               {tableHeading.map((item, index) => {

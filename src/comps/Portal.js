@@ -55,8 +55,10 @@ import Rules_Overview from "./Company/Rules_Overview";
 import Scroll from "./Commons/Scroll";
 import Rules_Scroll from "./Company/Rules_Scroll";
 import Stand from "./Home/Stand";
+import Share from "./Commons/Share";
 
 export {
+  Share,
   Stand,
   Rules_Scroll,
   Scroll,

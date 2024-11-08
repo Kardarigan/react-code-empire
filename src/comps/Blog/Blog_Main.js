@@ -1,13 +1,16 @@
-import { Article, FAQ } from "../Portal";
+import { Article, FAQ, Share } from "../Portal";
 
 const Blog_Main = ({ blog }) => {
   return (
     <main className="grid gap-y-12 lg:col-span-3">
-      <div className="flex-seperate mac-border py-3">
-        <span className="warn">{blog.category}</span>
-        <span>
-          <i className="fad fa-calendar text-blue-500 me-1" /> {blog.upload}
-        </span>
+      <div>
+        <div className="flex-seperate mac-border py-3">
+          <span className="warn">{blog.category}</span>
+          <span>
+            <i className="fad fa-calendar text-blue-500 me-1" /> {blog.upload}
+          </span>
+        </div>
+        <Share text="شما به خواندن این مقاله امپراتوری کد دعوت شده اید." />
       </div>
       <img
         src={blog.cover}
