@@ -1,8 +1,7 @@
 import { shareButtons } from "../../data/Constants";
 
-const Share = (text = null, customClass = "border-b border-blue-600 mb-3") => {
+const Share = (text = null) => {
   const hereUrl = window.location.href;
-  console.log(customClass);
 
   const handleShare = async (event) => {
     event.preventDefault();
@@ -26,7 +25,7 @@ const Share = (text = null, customClass = "border-b border-blue-600 mb-3") => {
   };
 
   return (
-    <section id="firstSection" className={`flex-seperate py-2 ${customClass}`}>
+    <section id="firstSection" className="flex-seperate py-2">
       <div className="flex">
         اشتراک گذاری:
         <ul className="flex items-center md:gap-x-3 gap-x-2 ms-2 title-sm text-blue-600">
