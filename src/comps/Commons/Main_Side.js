@@ -11,7 +11,7 @@ const Main_Side = ({ details, link, price = false, capacity = false }) => {
         {(capacity || capacity === 0) && (
           <section
             className={`py-3 warn flex-seperate ${
-              capacity == 0
+              capacity === 0
                 ? "border-red-500 bg-red-500 text-slate-50"
                 : capacity < 10
                 ? "border-yellow-400 bg-yellow-400 text-slate-900"

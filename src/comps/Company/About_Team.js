@@ -21,7 +21,7 @@ const About_Team = () => {
             <div
               className={`border-4 border-slate-800 text-slate-50 group relative rounded-lg overflow-hidden ${className} ${
                 durations[index]
-              } ${index == 1 ? " scale-105 z-10" : ""}`}
+              } ${index === 1 ? " scale-105 z-10" : ""}`}
               key={index}
               ref={ref}
             >

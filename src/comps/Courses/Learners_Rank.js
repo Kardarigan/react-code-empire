@@ -16,7 +16,7 @@ const Learners_Rank = () => {
                 return (
                   <th
                     className={`py-5${
-                      index == 3 || index == 5 ? " max-md:hidden" : ""
+                      index === 3 || index === 5 ? " max-md:hidden" : ""
                     }`}
                     key={index}
                   >
@@ -52,7 +52,7 @@ const Learners_Rank = () => {
                   </td>
                   <td className="p-5">
                     {item.rank}
-                    {item.rank == "جاویدان" && (
+                    {item.rank === "جاویدان" && (
                       <i className="fa-duotone fa-solid fa-crown text-purple-400 ms-1" />
                     )}
                   </td>
@@ -65,7 +65,7 @@ const Learners_Rank = () => {
       </div>
       <p className="mt-5 text-center label">
         معیار های انتخاب دانشجو های برتر رو میتونی{" "}
-        <Link to="/policy" className="link">
+        <Link to="/policy/رده‌بندی دانشجویان" className="link">
           اینجا
         </Link>{" "}
         بخونی.
