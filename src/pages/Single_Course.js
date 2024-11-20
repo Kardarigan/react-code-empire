@@ -38,6 +38,7 @@ const Single_Course = () => {
           link={{ label: "ثبت نام", path: theCourse.registerLink }}
           capacity={theCourse.capacity}
           price={theCourse.price}
+          hint="درصورت پرداخت اقساطی 5% و در صورت پرداخت یکجا از 20% تخفیف روی بهای دوره بهره‌مند میشوید!"
         />
       </section>
       <button

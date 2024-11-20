@@ -15,7 +15,7 @@ const About_Numbers = () => {
                   {item.title}
                 </h4>
               </div>
-              {index != about.numbers.length && (
+              {index !== about.numbers.length && (
                 <div className="w-[1px] bg-slate-950 h-full mx-auto bg-opacity-10" />
               )}
             </>

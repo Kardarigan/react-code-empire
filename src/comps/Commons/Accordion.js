@@ -17,7 +17,10 @@ const Accordion = ({ question }) => {
           }`}
         ></i>
       </div>
-      <div className="mt-5">{question.answer}</div>
+      <div className="py-3">
+        <hr className="mt-2 mb-4" />
+        <p className="para">{question.answer}</p>
+      </div>
     </div>
   );
 };

@@ -1,13 +1,21 @@
 import { Link } from "react-router-dom";
 
-const Main_Side = ({ details, link, price = false, capacity = false }) => {
+const Main_Side = ({
+  details,
+  link,
+  price = false,
+  capacity = false,
+  hint = false,
+}) => {
   const formattedPrice = price
     ? price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
     : null;
 
+  capacity = Number(capacity);
+
   return (
     <aside className="md:col-span-2">
-      <div className="flex flex-col gap-y-5 sticky top-20">
+      <div className="flex flex-col gap-y-3 sticky top-20">
         {(capacity || capacity === 0) && (
           <section
             className={`py-3 warn flex-seperate ${
@@ -45,10 +53,17 @@ const Main_Side = ({ details, link, price = false, capacity = false }) => {
         )}
         <Link
           className="py-3 button button-outline-dark rounded-3xl"
-          to={link.path}
+          to={capacity !== 0 && link.path}
+          onClick={() => alert("این دوره پر شده است!")}
         >
           {link.label}
         </Link>
+        {hint && (
+          <div className="flex items-center">
+            <i className="fas fa-checkfa-duotone fa-regular fa-badge-percent me-1"></i>{" "}
+            <p className="label">{hint}</p>
+          </div>
+        )}
       </div>
     </aside>
   );
