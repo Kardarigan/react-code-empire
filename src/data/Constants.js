@@ -6,6 +6,8 @@ import Persian_Coder_3 from "../assets/painting_of_an_ancient_Persian_with_sassa
 import Team_1 from "../assets/team/team_1.png";
 import Team_2 from "../assets/team/team_2.png";
 import Team_3 from "../assets/team/team_3.png";
+import Home_Academy from "../assets/pages/home-academy.png";
+import Home_Ways from "../assets/pages/home-ways.png";
 
 export const navLinks = [
   { href: "/", label: "خانه" },
@@ -13,10 +15,6 @@ export const navLinks = [
   {
     href: "/about",
     label: "درباره",
-  },
-  {
-    href: "/service",
-    label: "خدمات",
   },
   {
     href: "/courses",
@@ -30,10 +28,6 @@ export const hamburgerLinks = [
   {
     href: "/about",
     label: "درباره",
-  },
-  {
-    href: "/service",
-    label: "خدمات",
   },
   {
     href: "/courses",
@@ -56,11 +50,18 @@ export const socialButtons = [
   { href: "#", iconClass: "fa-brands fa-telegram" },
 ];
 
-export const lessCode = {
-  title: "کمترین کد همیشه بهترینه!",
+export const futureAcademy = {
+  title: "امپراتوری کد؛ مسیری به آینده",
   describe:
-    "همیشه بهترین سایت یا برنامه، اونیه که کمترین و بهینه ترین کد رو داشته باشه. پروژه ای که به دست برنامه نویسان امپراتوری کد ساخته میشه به طور کاملا آشکاری از کمترین و بهینه ترین کد ها در هر زمینه ای استفاده میکنه با این روش که قابل استفاده ترین کد ممکن نوشته میشه. ما در آموزش هامونم به همین شکل به شما برنامه نویسی رو یاد میدیم. همین روشه کد امپایر رو متمایز میکنه!",
-  cover: Persian_Programmer,
+    "آکادمی امپراتوری کد با هدف ارتقای سطح یادگیری و آموزش مهارت‌های برنامه‌نویسی، طراحی وبسایت، و بازی‌سازی تأسیس شده است. ما متعهدیم که برای تمامی افرادی که به دنبال آینده‌ای متفاوت هستند، مسیری الهام‌بخش و ارزشمند ایجاد کنیم؛ آینده‌ای که بر پایه مهارت‌های حرفه‌ای، درآمد پایدار و زندگی‌ای راحت و پیشرو در دنیای فناوری شکل می‌گیرد.",
+  cover: Home_Academy,
+};
+
+export const newWays = {
+  title: "یادگیری نوین و بی‌همتا",
+  describe:
+    "در آکادمی امپراتوری کد، با بهره‌گیری از به‌روزترین و مؤثرترین روش‌های آموزش خصوصی آنلاین، به شما کمک می‌کنیم تا در زمینه‌های برنامه‌نویسی، طراحی وبسایت و بازی‌سازی به مهارت‌های مورد علاقه خود مسلط شوید. اینجا جایی است که می‌توانید رویای خود را در دنیای کدها بسازید و آینده‌ای متفاوت رقم بزنید.",
+  cover: Home_Ways,
 };
 
 export const whatWeAre = {

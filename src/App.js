@@ -5,9 +5,7 @@ import {
   About,
   Blog,
   Contact,
-  Service,
   Single_Blog,
-  Single_Service,
   Courses,
   Single_Course,
   Course_Form,
@@ -26,8 +24,6 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:blog" element={<Single_Blog />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/service" element={<Service />} />
-          <Route path="/service/:service" element={<Single_Service />} />
           <Route path="/policy" element={<Rules />} />
           <Route path="/policy/:rule" element={<Single_Rule />} />
           <Route path="/courses" element={<Courses />} />

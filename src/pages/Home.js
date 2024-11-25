@@ -1,22 +1,28 @@
 import {
   Home_Hero,
-  Services,
   Half,
   Customers,
   Overall,
   Popular_Courses,
   Instagram,
+  Course_Benefits,
 } from "../comps/Portal";
-import { homeOverall, lessCode, whatWeAre } from "../data/Constants";
+import {
+  homeOverall,
+  futureAcademy,
+  newWays,
+  whatWeAre,
+} from "../data/Constants";
 
 const Home = () => {
   return (
     <>
       <Home_Hero />
-      <Services homepage />
-      <Half thing={lessCode} />
+      <Half thing={futureAcademy} />
       <Popular_Courses />
-      <Half thing={whatWeAre} reverse />
+      <Half thing={newWays} reverse />
+      <Course_Benefits />
+      <Half thing={whatWeAre} />
       <Instagram />
       <Customers />
       <Overall thing={homeOverall} />

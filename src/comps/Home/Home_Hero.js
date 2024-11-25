@@ -2,6 +2,7 @@ import Hero_Bg from "../../assets/Hero.jpg";
 import Hero_Video from "../../assets/Hero_Bg.mp4";
 import { TypeAnimation } from "react-type-animation";
 import { Link } from "react-router-dom";
+import { Lordicon } from "../Portal";
 const Home_Hero = () => {
   return (
     <section
@@ -10,19 +11,24 @@ const Home_Hero = () => {
     >
       <div className="w-full text-center absolute z-10 mt-24">
         <div className="text-7xl text-slate-50 mx-auto padding max-w-[800px]">
+          <h1 className="para-sm text-center translate-x-[23%] translate-y-[10px] rotate-12 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+            آکادمی
+          </h1>
           <h1>امپــراتـــوری</h1>
           <h1 className="text-purple-500">کــــــــــــــــــد</h1>
           <p className="text-base max-sm:text-sm">
             <TypeAnimation
               sequence={[
-                "ما برات بهترین سایت رو میسازیم",
+                "اینجا برنامه نویسی رو یاد میگیری",
                 2500,
-                "ما بهت یاد میدیم چطوری برنامه نویسی کنی",
+                "ما بهت یاد میدیم سایت خودت رو طراحی کنی",
+                2500,
+                "ما یادت میدیم برنامه های کاربردی بسازی",
+                2500,
+                "ما بهت یاد میدیم بازی های ویدیویی خودت رو بسازی",
                 3000,
-                "ما زندگیت رو بهتر میکنیم",
+                "ما تو رو برای آینده آماده میکنیم",
                 2000,
-                "ما مسیر موفقیت در این زمینه رو بهت نشون میدیم",
-                4000,
                 "اگر به امپراتوری بپیوندی!",
                 5000,
               ]}
@@ -37,6 +43,7 @@ const Home_Hero = () => {
             </Link>
           </div>
         </div>
+        <Lordicon iconName="rmkahxvq" />
       </div>
       <video autoPlay muted loop className="bg-fullobject w-full h-screen">
         <source

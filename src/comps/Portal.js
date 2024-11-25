@@ -6,10 +6,8 @@ import { Count_Animation } from "./Commons/Count_Animation";
 import Contact from "../pages/Contact";
 import About from "../pages/About";
 import Blog from "../pages/Blog";
-import Service from "../pages/Service";
 import Home from "../pages/Home";
 import Layout from "./Layout";
-import Services from "./Home/Services";
 import Home_Hero from "./Home/Home_Hero";
 import Customers from "./Home/Customers";
 import Overall from "./Commons/Overall";
@@ -26,7 +24,6 @@ import Blog_Card from "./Blog/Blog_Card";
 import Single_Blog from "../pages/Single_Blog";
 import Blog_Main from "./Blog/Blog_Main";
 import Blog_Side from "./Blog/Blog_Side";
-import Single_Service from "../pages/Single_Service";
 import Courses from "../pages/Courses";
 import All_Courses from "../comps/Courses/All_Courses";
 import Course_Card from "./Courses/Course_Card";
@@ -56,8 +53,10 @@ import Scroll from "./Commons/Scroll";
 import Rules_Scroll from "./Company/Rules_Scroll";
 import Stand from "./Home/Stand";
 import Share from "./Commons/Share";
+import Lordicon from "./Commons/Lordicon";
 
 export {
+  Lordicon,
   Share,
   Stand,
   Rules_Scroll,
@@ -89,13 +88,11 @@ export {
   Course_Card,
   All_Courses,
   Courses,
-  Single_Service,
   Blog_Side,
   Blog_Main,
   Single_Blog,
   Blog_Overview,
   Blog_Card,
-  Service,
   About_Numbers,
   Top_Image_Section,
   Form,
@@ -110,7 +107,6 @@ export {
   Layout,
   Home_Hero,
   Hero,
-  Services,
   Half,
   Customers,
 };

@@ -39,7 +39,6 @@ export const courses = [
     specs: [
       { label: "نام دوره", describe: "HTML و CSS" },
       { label: "پیش نیاز", describe: "هیچی" },
-      { label: "پشتیبانی و مشاوره", describe: "دارد" },
       { label: "امکان برگزاری به صورت فشرده", describe: "دارد" },
       { label: "بهای در صورت فشرده بودن دوره", describe: "1,599,000 تومان" },
       { label: "روش آموزش", describe: "پروژه محور" },
@@ -131,7 +130,6 @@ export const courses = [
     specs: [
       { label: "نام دوره", describe: "JavaScript" },
       { label: "پیش نیاز", describe: "HTML و CSS" },
-      { label: "پشتیبانی و مشاوره", describe: "دارد" },
       { label: "امکان برگزاری به صورت فشرده", describe: "دارد" },
       { label: "بهای در صورت فشرده بودن دوره", describe: "3,299,000 تومان" },
       { label: "روش آموزش", describe: "ترکیبی" },
@@ -234,7 +232,6 @@ export const courses = [
     specs: [
       { label: "نام دوره", describe: "Tailwind" },
       { label: "پیش نیاز", describe: "HTML و CSS" },
-      { label: "پشتیبانی و مشاوره", describe: "دارد" },
       { label: "امکان برگزاری به صورت فشرده", describe: "دارد" },
       { label: "بهای در صورت فشرده بودن دوره", describe: "999,000 تومان" },
       { label: "روش آموزش", describe: "پروژه محور" },
@@ -327,7 +324,6 @@ export const courses = [
     specs: [
       { label: "نام دوره", describe: "Bootstrap" },
       { label: "پیش نیاز", describe: "HTML و CSS" },
-      { label: "پشتیبانی و مشاوره", describe: "دارد" },
       { label: "امکان برگزاری به صورت فشرده", describe: "دارد" },
       { label: "بهای در صورت فشرده بودن دوره", describe: "999,000 تومان" },
       { label: "روش آموزش", describe: "پروژه محور" },
@@ -405,7 +401,6 @@ export const courses = [
     specs: [
       { label: "نام دوره", describe: "پایتون ابتدایی" },
       { label: "پیش نیاز", describe: "هیچی" },
-      { label: "پشتیبانی و مشاوره", describe: "دارد" },
       { label: "امکان برگزاری به صورت فشرده", describe: "دارد" },
       { label: "بهای در صورت فشرده بودن دوره", describe: "3,299,000 تومان" },
       { label: "روش آموزش", describe: "مرحله ای" },
@@ -497,7 +492,6 @@ export const courses = [
     specs: [
       { label: "نام دوره", describe: "پایتون پیشرفته" },
       { label: "پیش نیاز", describe: "پایتون ابتدایی" },
-      { label: "پشتیبانی و مشاوره", describe: "دارد" },
       { label: "امکان برگزاری به صورت فشرده", describe: "ندارد" },
       { label: "روش آموزش", describe: "پروژه محور" },
       { label: "زمان کل دوره", describe: "25 ساعت" },
@@ -617,7 +611,6 @@ export const courses = [
     specs: [
       { label: "نام دوره", describe: "#C" },
       { label: "پیش نیاز", describe: "هیچی" },
-      { label: "پشتیبانی و مشاوره", describe: "دارد" },
       { label: "امکان برگزاری به صورت فشرده", describe: "دارد" },
       { label: "بهای در صورت فشرده بودن دوره", describe: "3,599,000 تومان" },
       { label: "روش آموزش", describe: "ترکیبی" },
@@ -718,7 +711,6 @@ export const courses = [
     specs: [
       { label: "نام دوره", describe: "++C" },
       { label: "پیش نیاز", describe: "هیچی" },
-      { label: "پشتیبانی و مشاوره", describe: "دارد" },
       { label: "امکان برگزاری به صورت فشرده", describe: "دارد" },
       { label: "بهای در صورت فشرده بودن دوره", describe: "4,999,000 تومان" },
       { label: "روش آموزش", describe: "مرحله ای" },
@@ -811,7 +803,6 @@ export const courses = [
     specs: [
       { label: "نام دوره", describe: "Java" },
       { label: "پیش نیاز", describe: "هیچی" },
-      { label: "پشتیبانی و مشاوره", describe: "دارد" },
       { label: "امکان برگزاری به صورت فشرده", describe: "دارد" },
       { label: "بهای در صورت فشرده بودن دوره", describe: "3,599,000 تومان" },
       { label: "روش آموزش", describe: "پروژه محور" },
@@ -897,7 +888,6 @@ export const courses = [
     specs: [
       { label: "نام دوره", describe: "Unrael Engin" },
       { label: "پیش نیاز", describe: "هیچی" },
-      { label: "پشتیبانی و مشاوره", describe: "دارد" },
       { label: "امکان برگزاری به صورت فشرده", describe: "ندارد" },
       { label: "روش آموزش", describe: "پروژه محور" },
       { label: "زمان کل دوره", describe: "30 ساعت" },
@@ -1004,7 +994,6 @@ export const courses = [
     specs: [
       { label: "نام دوره", describe: "Unity 6" },
       { label: "پیش نیاز", describe: "هیچی" },
-      { label: "پشتیبانی و مشاوره", describe: "دارد" },
       { label: "امکان برگزاری به صورت فشرده", describe: "ندارد" },
       { label: "روش آموزش", describe: "پروژه محور" },
       { label: "زمان کل دوره", describe: "32 ساعت" },
@@ -1097,7 +1086,6 @@ export const courses = [
     specs: [
       { label: "نام دوره", describe: "Scratch Junior" },
       { label: "پیش نیاز", describe: "هیچی" },
-      { label: "پشتیبانی و مشاوره", describe: "دارد" },
       { label: "امکان برگزاری به صورت فشرده", describe: "دارد" },
       { label: "بهای در صورت فشرده بودن دوره", describe: "2,199,000 تومان" },
       { label: "روش آموزش", describe: "ترکیبی" },
