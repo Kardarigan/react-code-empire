@@ -1,9 +1,13 @@
-import Freelancer_Cover from "../assets/painting_of_an_ancient_Persian_with_sassanid_helmet_soldiers_while_their_coding_in_his_laptop_png.png";
+import emperatori_code_jaei_baraye_noavari_va_yadgiri from "../assets/blogs/emperatori-code-jaei-baraye-noavari-va-yadgiri.png";
+import barnamehnevisi_ta_movafaiaghit_ranpannamayi_baraye_ayandehsazan from "../assets/blogs/barnamehnevisi-ta-movafaiaghit-ranpannamayi-baraye-ayandehsazan.png";
+import barnameh_nevisi_baraye_farzandan from "../assets/blogs/barnameh-nevisi-baraye-farzandan.jpeg";
+import niaz_haye_aqaz_barnameh_nevisi from "../assets/blogs/niaz-haye-aqaz-barnameh-nevisi.png";
+import barnameh_nevisi_chist from "../assets/blogs/barnameh-nevisi-chist.png";
 
 export const blogs = [
   {
     title: "برنامه نویسی چیست؟",
-    cover: Freelancer_Cover,
+    cover: barnameh_nevisi_chist,
     category: "برنامه نویسی",
     author: "پارسا عربی",
     upload: "مرداد 1403",
@@ -81,14 +85,14 @@ export const blogs = [
   },
   {
     title: "نیاز های برنامه نویسی",
-    cover: Freelancer_Cover,
+    cover: niaz_haye_aqaz_barnameh_nevisi,
     category: "برنامه نویسی",
     author: "پارسا عربی",
     upload: "مرداد 1403",
     suggested: 15,
     paragraphes: [
       {
-        title: "مقدمه",
+        title: "پیشگفتار",
         paragraph: [
           "خوش آمدی! تو این مقاله میخونی که برنامه نویسی چه پیش نیاز هایی میخواد، خوشبختانه پیش نیاز‌های پیچیده‌ای نمیخواد ولی خب مهم هستن برای آغاز این کار.",
         ],
@@ -140,14 +144,14 @@ export const blogs = [
   },
   {
     title: "برنامه نویسی برای فرزندان",
-    cover: Freelancer_Cover,
+    cover: barnameh_nevisi_baraye_farzandan,
     category: "برنامه نویسی",
     author: "پارسا عربی",
     upload: "مرداد 1403",
     suggested: 15,
     paragraphes: [
       {
-        title: "مقدمه",
+        title: "پیشگفتار",
         paragraph: [
           "پدر یا مادر عزیز خیلی خوشحالیم که این مقاله رو میخونید، بدون شک یکی از مهمترین دغدغه‌های شما موفقیت فرزندانتون هست و از دل و جان دوست دارین هر کاری از دستتون بر میاد برای آگاهی و یادگیری و رشد و پیشرفت فرزندتون انجام بدین.",
           "ما همیشه سپاسگزار زحمات و لطف‌های بی‌کران شما هستیم🙏 به همین دلیل این مقاله رو براتون آماده کردیم تا کمکتون کنیم و شاید بخش ناچیزی از محبتاتون رو جبران کنیم...",
@@ -187,7 +191,7 @@ export const blogs = [
   },
   {
     title: "برنامه‌نویسی تا موفقیت: راهنمایی برای آینده‌سازان",
-    cover: Freelancer_Cover,
+    cover: barnamehnevisi_ta_movafaiaghit_ranpannamayi_baraye_ayandehsazan,
     category: "برنامه نویسی",
     author: "پارسا عربی",
     upload: "شهریور 1403",
@@ -265,7 +269,7 @@ export const blogs = [
   },
   {
     title: "امپراتوری کد: جایی برای نوآوری و یادگیری",
-    cover: Freelancer_Cover,
+    cover: emperatori_code_jaei_baraye_noavari_va_yadgiri,
     category: "امپراتوری",
     author: "پارسا عربی",
     upload: "شهریور 1403",

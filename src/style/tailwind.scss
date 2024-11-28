@@ -18,6 +18,9 @@
       @apply flex justify-between items-center;
     }
   }
+  .bg {
+    @apply bg-gradient-to-bl from-blue-500 to-blue-700;
+  }
   .button {
     @apply transition duration-200 lg:text-sm text-center font-semibold backdrop-blur-sm text-sm rounded md:w-auto inline-block w-full px-10 py-2;
     &-outline {
@@ -110,7 +113,7 @@
     @apply px-10 py-8 mac-border;
   }
   .card {
-    @apply bg-blue-700 border-2 border-slate-200 size-full flex p-12 rounded-xl;
+    @apply bg border-2 border-slate-200 size-full flex p-12 rounded-xl;
   }
 }
 @layer utilities {

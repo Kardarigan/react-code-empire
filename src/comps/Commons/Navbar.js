@@ -67,10 +67,10 @@ const Navbar = () => {
             })}
           </nav>
           <Link
-            to="/contact"
+            to="/courses/register-form"
             className="button button-outline-light max-md:hidden"
           >
-            آغاز همکاری
+            رزرو دوره
           </Link>
           <button
             className={`md:hidden flex-fullcenter text-xl rounded size-10 ${

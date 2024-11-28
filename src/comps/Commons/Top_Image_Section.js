@@ -10,7 +10,7 @@ const Top_Image_Section = ({ title = null, label = null, describe, cover }) => {
           ref={ref}
           src={cover}
           alt={title}
-          className={`w-full rounded-lg max-h-[80vh] bg-fullobject ${className}`}
+          className={`w-full rounded-lg max-h-[80vh] bg-fullobject filter-indigo ${className}`}
         />
         {label && <p className="label">* {label}</p>}
       </div>

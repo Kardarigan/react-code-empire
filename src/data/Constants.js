@@ -1,7 +1,6 @@
-import Persian_Programmer from "../assets/painting_of_an_ancient_Persian_with_sassanid_helmet_soldier_while_his_coding_in_his_laptop_png.png";
 import Persians_Parade from "../assets/persians_parade.jpg";
 import Persian_Coder_1 from "../assets/painting_of_an_ancient_Persian_with_sassanid_helmet_soldier_while_his_coding_in_his_laptop_png(1).png";
-import Persian_Coder_2 from "../assets/painting_of_an_ancient_parthian_imperial_philosophers_while_their_coding_in_their_laptop_in_front_perspolis_png.png";
+import Persian_Coder_2 from "../assets/painting_of_an_ancient_Persian_with_sassanid_helmet_soldier_while_his_coding_in_his_laptop_png(1).png";
 import Persian_Coder_3 from "../assets/painting_of_an_ancient_Persian_with_sassanid_helmet_thousanse_soldiers_while_their_coding_in_their_laptop_png.png";
 import Team_1 from "../assets/team/team_1.png";
 import Team_2 from "../assets/team/team_2.png";
@@ -65,9 +64,9 @@ export const newWays = {
 };
 
 export const whatWeAre = {
-  title: "این امپراتوری دقیقا چیه؟",
+  title: "امپراتوری کد چیست؟",
   describe:
-    "امپراتوری کد یک تیم بسیار منسجم و قدرتمنده که میخواد تمام دنیای وبسایت ها و اپ هارو تصرف کنه و دگرگونی اساسی ای توش انجام بده. تمام سربازان امپراتوری برای این حقیقت که طراحی و کد زدن رو به بهترین سطح برسونن تا دیگه هیچ کس بجر کد های تمیز، طراحی های دلنواز و زیبا و برنامه هایی با کاربری بسیار راحت و سبک نتونه تو دنیا پیدا کنه!",
+    "امپراتوری کد، گروهی توانمند و استوار است که آرزوی دگرگونی بنیادین در جهان وب‌سایت‌ها، برنامه‌ها و بازی‌ها را در سر دارد. خواهران و برادران ما در این امپراتوری، شبانه‌روز می‌کوشند تا با بهره‌گیری از شیوه‌های نوین و کارآمد، آموزشی بی‌مانند را به همه کسانی که می‌خواهند آینده خود را با یادگیری مهارت‌های برنامه‌نویسی، طراحی وب‌سایت یا بازی‌سازی بسازند، ارائه دهند. آموزش تازه‌ترین فناوری‌ها و زبان‌های نوین، با هدف ارتقای کیفیت برنامه‌ها، وب‌سایت‌ها و بازی‌ها، سرلوحه این حرکت است.",
   cover: Persians_Parade,
 };
 
@@ -280,8 +279,8 @@ export const registerForm = [
       "JavaScript",
       "Tailwind",
       "Bootstrap",
-      "C#",
-      "C++",
+      "#C",
+      "++C",
       "Java",
       "Python مبدتی",
       "Python پیشرفته",
@@ -317,7 +316,8 @@ export const contactInfo = [
   },
   {
     label: "آدرس دفتر",
-    describe: "تهران، خیابان دروس، خیابان پاسداران، برج سفید، طبقه 5",
+    describe:
+      "تهران، بزرگراه شهید حکیم، ابتدای شیخ بهایی جنوبی، برج بین الملل تهران",
   },
 ];
 
@@ -354,7 +354,7 @@ export const companies = [
 
 export const teamMembers = [
   {
-    name: "داریوش رازی",
+    name: "دارا آکدیان",
     role: "هم بنیانگزار و مدیرعامل",
     profile: Team_1,
     bio: "برنامه‌نویس و طراح وبسایت و دانشجوی ارشد مدیریت کسب و کار. بنده به عنوان هم‌بنیانگذار این امپراتوری و یکی از اعضای تیم آموزشی آکادمی امپراتوری کد بسیار خوشنودم که به شما بزرگواران خدمت میکنم.",
@@ -383,8 +383,8 @@ export const policyOverall = {
       label: "شرکت در دوره",
     },
     {
-      link: "/contact",
-      label: "تماس برای همکاری",
+      link: "/contact/register-form",
+      label: "رزور دوره",
     },
   ],
 };

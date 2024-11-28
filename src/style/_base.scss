@@ -38,6 +38,15 @@ body {
   );
 }
 
+.filter {
+  &-indigo {
+    filter: hue-rotate(250deg);
+  }
+  &-blue {
+    filter: hue-rotate(180deg);
+  }
+}
+
 .allunset {
   all: unset !important;
 }

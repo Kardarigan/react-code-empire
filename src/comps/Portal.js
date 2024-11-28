@@ -53,10 +53,8 @@ import Scroll from "./Commons/Scroll";
 import Rules_Scroll from "./Company/Rules_Scroll";
 import Stand from "./Home/Stand";
 import Share from "./Commons/Share";
-import Lordicon from "./Commons/Lordicon";
 
 export {
-  Lordicon,
   Share,
   Stand,
   Rules_Scroll,

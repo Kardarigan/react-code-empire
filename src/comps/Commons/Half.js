@@ -24,7 +24,7 @@ const Half = ({ thing, reverse = false }) => {
           </h3>
           <p className="my-5 para max-w-[500px]">{thing.describe}</p>
           <Link to="/contact" className="button button-dark">
-            شروع همکاری
+            مشاهده‌ی دوره ها
           </Link>
         </div>
       </div>
@@ -44,7 +44,7 @@ const Half = ({ thing, reverse = false }) => {
             <img
               src={thing.cover}
               alt={thing.title}
-              className="w-full bg-fullobject ghost rounded"
+              className="w-full bg-fullobject ghost rounded filter-indigo"
             />
           )}
         </div>
