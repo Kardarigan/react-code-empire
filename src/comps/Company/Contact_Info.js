@@ -3,7 +3,10 @@ import { contactInfo } from "../../data/Constants";
 const Contact_Info = () => {
   return (
     <section className="pagecenter">
-      <div className="box">
+      <h3 className="title text-center">
+        <span className="mac-bg">راه های ارتباط با امپراتوری</span>
+      </h3>
+      <div className="box mt-5">
         <ul className="grid gap-y-5">
           {contactInfo.map((item, index) => {
             return (

@@ -40,22 +40,6 @@ const Blog_Side = ({ author }) => {
           همه
         </Link>
       </section>
-      <section className="mac-border py-2">
-        <ul className="flex-seperate">
-          {socialButtons.map((item, index) => {
-            return (
-              <li key={index}>
-                <a
-                  href={item.href}
-                  className="text-blue-500 hover:text-blue-400"
-                >
-                  <i className={item.iconClass} />
-                </a>
-              </li>
-            );
-          })}
-        </ul>
-      </section>
     </aside>
   );
 };

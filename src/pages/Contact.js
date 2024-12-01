@@ -1,5 +1,12 @@
 import { contactForm } from "../data/Constants";
-import { Contact_Info, Contact_Us, Form, Hero, Tip } from "../comps/Portal";
+import {
+  Breadcrumb,
+  Contact_Info,
+  Contact_Us,
+  Form,
+  Hero,
+  Tip,
+} from "../comps/Portal";
 
 const Contact = () => {
   return (
@@ -8,8 +15,9 @@ const Contact = () => {
         title="گویا زمان همکاریمون فرا رسیده!"
         subtitle="تنها باید فرم زیر رو پر کنی تا با امپراتوری تماس بگیری"
       />
-      <Contact_Us />
+      <Breadcrumb />
       <Contact_Info />
+      <Contact_Us />
       <section className="pagecenter pb-40">
         <h3 className="title text-center mb-5">
           <span className="mac-bg">فرم تماس با امپراتوری</span>
@@ -17,7 +25,7 @@ const Contact = () => {
         <Form fields={contactForm} />
         <Tip
           className="mt-12"
-          message='اگه ازین فرما خوشت نمیاد یه ایمیل ساده میتونی <a class="link" href="mailto:duckduckstay@hotmail.com">بفرستی</a>.'
+          message='<a href="mailto:duckduckstay@hotmail.com">اگه ازین فرما خوشت نمیاد یه ایمیل ساده میتونی بفرستی</a>.'
         />
       </section>
     </>

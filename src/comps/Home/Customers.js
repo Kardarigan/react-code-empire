@@ -37,7 +37,7 @@ const Customers = () => {
                     alt={item.name}
                     className="w-24 h-24 me-8"
                   />
-                  <div dir="rtl" className="text-slate-100 text-start">
+                  <div dir="rtl" className="text-start">
                     <h3>
                       {item.name}
                       <span className="mx-2 font-thin">/</span>

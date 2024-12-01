@@ -35,6 +35,8 @@ export const courses = [
   {
     title: "HTML,CSS",
     persianTitle: "اچ‌تی‌ام‌ال و سی‌اس‌اس",
+    fullTitle: "",
+    fullTitle: "آموزش طراحی وبسایت با HTML,CSS",
     path: "html-css",
     category: "web",
     describe: "اصلی ترین تکنولوژی های طراحی وبسایت",
@@ -44,6 +46,7 @@ export const courses = [
     registerLink: "/courses/register-form",
     rank: 2,
     capacity: "29",
+    registered: 20,
     specs: [
       { label: "نام دوره", describe: "HTML و CSS" },
       { label: "پیش نیاز", describe: "هیچی" },
@@ -126,6 +129,7 @@ export const courses = [
   {
     title: "JavaScript",
     persianTitle: "جاوااسکریپت",
+    fullTitle: "آموزش برنامه نویسی وب با JavaScript",
     path: "javascript",
     category: "web",
     describe: "زبان برنامه نویسی مخصوص ساخت و طراحی وبسایت",
@@ -135,6 +139,7 @@ export const courses = [
     registerLink: "/courses/register-form",
     rank: 1,
     capacity: "22",
+    registered: 20,
     specs: [
       { label: "نام دوره", describe: "JavaScript" },
       { label: "پیش نیاز", describe: "HTML و CSS" },
@@ -227,6 +232,7 @@ export const courses = [
   {
     title: "Tailwind",
     persianTitle: "تیلویند",
+    fullTitle: "آموزش طراحی وبسایت با Tailwind",
     path: "tailwind",
     category: "web",
     describe: "استایل دهی پویاتر و رسپانسیو کردن اصولی تر",
@@ -236,6 +242,7 @@ export const courses = [
     registerLink: "/courses/register-form",
     rank: 1,
     capacity: "11",
+    registered: 20,
 
     specs: [
       { label: "نام دوره", describe: "Tailwind" },
@@ -319,6 +326,7 @@ export const courses = [
   {
     title: "Bootstrap",
     persianTitle: "بوت‌استرپ",
+    fullTitle: "آموزش طراحی وبسایت با Bootstrap",
     path: "bootstrap",
     category: "web",
     describe: "برای رسپانسیو کردن سریع و استایل دهی آماده",
@@ -328,6 +336,7 @@ export const courses = [
     registerLink: "/courses/register-form",
     rank: 2,
     capacity: "11",
+    registered: 20,
 
     specs: [
       { label: "نام دوره", describe: "Bootstrap" },
@@ -397,6 +406,7 @@ export const courses = [
   {
     title: "Python - Beginner",
     persianTitle: "پایتون ابتدایی",
+    fullTitle: "آموزش برنامه نویس با Python ابتدایی",
     path: "python-beginner",
     category: "software",
     describe: "شروع برنامه نویسی با پایتون مخصوص مبتدیا",
@@ -406,6 +416,7 @@ export const courses = [
     registerLink: "/courses/register-form",
     rank: 1,
     capacity: "32",
+    registered: 20,
     specs: [
       { label: "نام دوره", describe: "پایتون ابتدایی" },
       { label: "پیش نیاز", describe: "هیچی" },
@@ -488,6 +499,7 @@ export const courses = [
   {
     title: "Python - Pro",
     persianTitle: "پایتون پیشرفته",
+    fullTitle: "آموزش برنامه نویس با Python پیشرفته",
     path: "python-professional",
     category: "software",
     describe: "مکلمل دوره ی ابتدایی برای حرفه ای شدن",
@@ -497,6 +509,7 @@ export const courses = [
     registerLink: "/courses/register-form",
     rank: 2,
     capacity: "19",
+    registered: 20,
     specs: [
       { label: "نام دوره", describe: "پایتون پیشرفته" },
       { label: "پیش نیاز", describe: "پایتون ابتدایی" },
@@ -607,6 +620,7 @@ export const courses = [
   {
     title: "#C",
     persianTitle: "سی شارپ",
+    fullTitle: "آموزش برنامه نویس با زبان #C",
     path: "c-sharp",
     category: "software",
     describe: "برنامه نویسی با زبان پرقدرت #C",
@@ -616,6 +630,7 @@ export const courses = [
     registerLink: "/courses/register-form",
     rank: 2,
     capacity: "24",
+    registered: 20,
     specs: [
       { label: "نام دوره", describe: "#C" },
       { label: "پیش نیاز", describe: "هیچی" },
@@ -711,6 +726,7 @@ export const courses = [
   {
     title: "++C",
     persianTitle: "سی پلاس پلاس",
+    fullTitle: "آموزش برنامه نویس با زبان ++C",
     path: "c-plus-plus",
     category: "software",
     describe: "برنامه نویسی با زبان پرقدرت ++C",
@@ -720,6 +736,7 @@ export const courses = [
     registerLink: "/courses/register-form",
     rank: 2,
     capacity: "30",
+    registered: 20,
     specs: [
       { label: "نام دوره", describe: "++C" },
       { label: "پیش نیاز", describe: "هیچی" },
@@ -807,6 +824,7 @@ export const courses = [
   {
     title: "Java",
     persianTitle: "جاوا",
+    fullTitle: "آموزش برنامه نویس اندروید با زبان Java",
     path: "java",
     category: "software",
     describe: "برنامه نویسی با Java (ربطی به JavaScript نداره!)",
@@ -816,6 +834,7 @@ export const courses = [
     registerLink: "/courses/register-form",
     rank: 11,
     capacity: "7",
+    registered: 20,
     specs: [
       { label: "نام دوره", describe: "Java" },
       { label: "پیش نیاز", describe: "هیچی" },
@@ -892,6 +911,7 @@ export const courses = [
   {
     title: "Unreal Engin",
     persianTitle: "آنریل انجین",
+    fullTitle: "آموزش بازی سازی با موتور Unreal Engin",
     path: "unreal-engin",
     category: "game",
     describe: "ساخت بازی با موتور بازی سازی Unreal Engin",
@@ -901,6 +921,7 @@ export const courses = [
     registerLink: "/courses/register-form",
     rank: 2,
     capacity: "14",
+    registered: 20,
     specs: [
       { label: "نام دوره", describe: "Unrael Engin" },
       { label: "پیش نیاز", describe: "هیچی" },
@@ -998,6 +1019,7 @@ export const courses = [
   {
     title: "Unity 6",
     persianTitle: "یونیتی 6",
+    fullTitle: "آموزش بازی سازی با موتور Unity 6",
     path: "unity",
     category: "game",
     describe: "ساخت بازی با موتور بازی سازی Unity 6",
@@ -1007,6 +1029,7 @@ export const courses = [
     registerLink: "/courses/register-form",
     rank: 2,
     capacity: "19",
+    registered: 20,
     specs: [
       { label: "نام دوره", describe: "Unity 6" },
       { label: "پیش نیاز", describe: "هیچی" },
@@ -1090,6 +1113,7 @@ export const courses = [
   {
     title: "Scratch Junior",
     persianTitle: "اسکرچ جونیور",
+    fullTitle: "آموزش بازی سازی با Scratch Junior",
     path: "scratch",
     category: "game",
     describe: "ساخت بازی برای کودکان با موتور بازی سازی Scratch Junior",
@@ -1099,6 +1123,7 @@ export const courses = [
     registerLink: "/courses/register-form",
     rank: 2,
     capacity: "20",
+    registered: 20,
     specs: [
       { label: "نام دوره", describe: "Scratch Junior" },
       { label: "پیش نیاز", describe: "هیچی" },

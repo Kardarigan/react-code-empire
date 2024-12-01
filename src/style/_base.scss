@@ -1,4 +1,4 @@
-$color_prime: #10439f;
+$color_prime: rgb(37 99 235);
 $color_second: #d17cd9;
 $color_dark: #171a20;
 $color_light: #f3f4f4;
@@ -20,7 +20,7 @@ body {
   background: linear-gradient(
     109.6deg,
     #fff 30%,
-    rgba(161, 206, 255, 0.407) 50%,
+    rgba(161, 206, 255, 0.3) 50%,
     #fff 70%
   );
 }

@@ -53,8 +53,10 @@ import Scroll from "./Commons/Scroll";
 import Rules_Scroll from "./Company/Rules_Scroll";
 import Stand from "./Home/Stand";
 import Share from "./Commons/Share";
+import Breadcrumb from "./Commons/Breadcrumb";
 
 export {
+  Breadcrumb,
   Share,
   Stand,
   Rules_Scroll,

@@ -102,17 +102,17 @@ const Blog_Overview = () => {
             ))}
           </select>
         </div>
-        <div className="flex py-2 gap-x-3 max-md:min-w-full mac-border rounded-full bg-blue-500 text-blue-50">
+        <div className="flex py-2 gap-x-3 md:min-w-[35vw] min-w-full mac-border rounded-full bg-blue-500 text-blue-50">
           <button onClick={handleSearch}>
             <i className="fas fa-magnifying-glass"></i>
           </button>
           <input
             type="text"
             id="search"
-            className="allunset field bg-transparent"
+            className="py-0 field bg-transparent w-full text-slate-50"
           />
         </div>
-        <div className="flex-seperate items-center max-md:min-w-full gap-1 text-slate-400 font-thin select-none">
+        <div className="flex-seperate items-center max-md:min-w-full gap-1 text-slate-400 font-thin select-none mac-border py-2">
           {sortby.map((item, index) => (
             <>
               <span
@@ -125,7 +125,7 @@ const Blog_Overview = () => {
                 {item}
               </span>
               {index + 1 < sortby.length && (
-                <span className="opacity-50">/</span>
+                <span className="opacity-50">|</span>
               )}
             </>
           ))}

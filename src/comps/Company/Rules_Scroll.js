@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import { Scroll } from "../Portal";
 
-const Rules_Scroll = ({ rules }) => {
+const Rules_Scroll = ({ title, rules }) => {
   return (
     <Scroll>
-      <h3 className="title-sm">{rules.title}</h3>
+      <h3 className="title-sm">{title}</h3>
       <ul className="mt-5">
-        {rules.rules.map((rule, i) => {
+        {rules.map((rule, i) => {
           return (
             <li key={i}>
               <Link

@@ -1,5 +1,6 @@
 import {
   All_Courses,
+  Breadcrumb,
   Course_Benefits,
   FAQ,
   Hero,
@@ -14,6 +15,7 @@ const Courses = () => {
   return (
     <>
       <Hero title="دوره های امپراتوری" background={Cover} />
+      <Breadcrumb />
       <All_Courses />
       <Learners_Rank />
       <Course_Benefits />

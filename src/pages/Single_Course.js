@@ -1,5 +1,12 @@
 import { useParams } from "react-router-dom";
-import { Article, FAQ, Hero, Main_Side, Share } from "../comps/Portal";
+import {
+  Article,
+  Breadcrumb,
+  FAQ,
+  Hero,
+  Main_Side,
+  Share,
+} from "../comps/Portal";
 import { courses } from "../data/Courses";
 import { useEffect, useState } from "react";
 
@@ -25,6 +32,7 @@ const Single_Course = () => {
   return (
     <>
       <Hero title={theCourse.title} subtitle={subtitle} />
+      <Breadcrumb />
       <section className="grid md:grid-cols-5 gap-8 container padding-x padding-t pb-60 relative">
         <div className="md:col-span-3 max-md:pb-12">
           <Share />

@@ -17,7 +17,7 @@ const Blog_Main = ({ blog }) => {
         alt={blog.title}
         className="bg-fullobject rounded-xl w-full h-[400px]"
       />
-      <Article article={blog.paragraphes} />
+      <Article article={blog.paragraphs} />
       {blog.faq && <FAQ questions={blog.faq} />}
     </main>
   );

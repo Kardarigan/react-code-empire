@@ -19,10 +19,7 @@ const Contact_Us = () => {
   ];
   return (
     <section className="pagecenter">
-      <h3 className="title text-center">
-        <span className="mac-bg">راه های ارتباط با امپراتوری</span>
-      </h3>
-      <div className="flex max-md:flex-col mt-10 gap-x-32 text-center">
+      <div className="flex max-md:flex-col gap-x-32 text-center">
         {links.map((item, index) => {
           return (
             <div className={item.w + " mx-auto mt-6"} key={index}>

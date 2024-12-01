@@ -6,6 +6,7 @@ import {
   Popular_Courses,
   Instagram,
   Course_Benefits,
+  Breadcrumb,
 } from "../comps/Portal";
 import {
   homeOverall,
@@ -18,6 +19,7 @@ const Home = () => {
   return (
     <>
       <Home_Hero />
+      <Breadcrumb />
       <Half thing={futureAcademy} />
       <Popular_Courses />
       <Half thing={newWays} reverse />

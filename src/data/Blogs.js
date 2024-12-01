@@ -12,7 +12,7 @@ export const blogs = [
     author: "پارسا عربی",
     upload: "مرداد 1403",
     suggested: 12,
-    paragraphes: [
+    paragraphs: [
       {
         title: "برنامه نویسی چیست؟",
         paragraph: [
@@ -90,7 +90,7 @@ export const blogs = [
     author: "پارسا عربی",
     upload: "مرداد 1403",
     suggested: 15,
-    paragraphes: [
+    paragraphs: [
       {
         title: "پیشگفتار",
         paragraph: [
@@ -149,7 +149,7 @@ export const blogs = [
     author: "پارسا عربی",
     upload: "مرداد 1403",
     suggested: 15,
-    paragraphes: [
+    paragraphs: [
       {
         title: "پیشگفتار",
         paragraph: [
@@ -196,7 +196,7 @@ export const blogs = [
     author: "پارسا عربی",
     upload: "شهریور 1403",
     suggested: 15,
-    paragraphes: [
+    paragraphs: [
       {
         paragraph: [
           "امروزه برنامه‌نویسی به عنوان یکی از جذاب‌ترین و پردرآمدترین شغل‌ها شناخته می‌شود. با توجه به رشد روزافزون فناوری و نیاز به نرم‌افزارها و اپلیکیشن‌های نوین، یادگیری برنامه‌نویسی می‌تواند درهای زیادی را به روی شما باز کند. در این مقاله به بررسی مراحل و تکنیک‌هایی می‌پردازیم که با استفاده از آن‌ها می‌توانید در این زمینه موفق شوید.",
@@ -274,7 +274,7 @@ export const blogs = [
     author: "پارسا عربی",
     upload: "شهریور 1403",
     suggested: 15,
-    paragraphes: [
+    paragraphs: [
       {
         paragraph: [
           "در دنیای امروز، برنامه‌نویسی و فریلنسینگ (آزاد کاری) به عنوان دو زمینه پرطرفدار و پویا شناخته می‌شوند. از سال ۱۴۰۰، ما گروهی به نام «امپراتوری کد» را راه‌اندازی کرده به این زمینه‌ها ورود پیدا کردیم و به عنوان یک گروه فعال در زمینه برنامه‌نویسی و فریلنسری، تلاش کردیم تا بهترین خدمات را به علاقه‌مندان و دانشجویان ارائه دهیم.",
@@ -316,7 +316,7 @@ export const blogs = [
 //   category: "",
 //   upload: "",
 //   suggested: 15,
-//   paragraphes: [
+//   paragraphs: [
 //     {
 //       title: "",
 //       paragraph: [''],
