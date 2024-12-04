@@ -42,7 +42,8 @@ const Single_Course = () => {
           </div>
         </div>
         <Main_Side
-          details={theCourse.specs}
+          details={theCourse.details}
+          specs={theCourse.specs}
           link={{ label: "ثبت نام", path: theCourse.registerLink }}
           capacity={theCourse.capacity}
           price={theCourse.price}

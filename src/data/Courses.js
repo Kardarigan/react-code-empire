@@ -46,15 +46,30 @@ export const courses = [
     registerLink: "/courses/register-form",
     rank: 2,
     capacity: "29",
-    registered: 20,
     specs: [
+      {
+        icon: "fa-duotone fa-light fa-graduation-cap",
+        label: "شرکت کنندگان",
+        describe: 20,
+      },
+      {
+        icon: "fa-duotone fa-solid fa-clock-desk",
+        label: "زمان کل دوره",
+        describe: "20 ساعت",
+      },
+
+      {
+        icon: "fa-duotone fa-regular fa-chalkboard-user",
+        label: "جلسات",
+        describe: "20",
+      },
+    ],
+    details: [
       { label: "نام دوره", describe: "HTML و CSS" },
       { label: "پیش نیاز", describe: "هیچی" },
       { label: "امکان برگزاری به صورت فشرده", describe: "دارد" },
       { label: "بهای در صورت فشرده بودن دوره", describe: "1,599,000 تومان" },
       { label: "روش آموزش", describe: "پروژه محور" },
-      { label: "زمان کل دوره", describe: "20 ساعت" },
-      { label: "جلسات", describe: "20" },
     ],
     paragraphs: [
       {
@@ -139,15 +154,29 @@ export const courses = [
     registerLink: "/courses/register-form",
     rank: 1,
     capacity: "22",
-    registered: 20,
     specs: [
+      {
+        icon: "fa-duotone fa-light fa-graduation-cap",
+        label: "شرکت کنندگان",
+        describe: 20,
+      },
+      {
+        icon: "fa-duotone fa-solid fa-clock-desk",
+        label: "زمان کل دوره",
+        describe: "30 ساعت",
+      },
+      {
+        icon: "fa-duotone fa-regular fa-chalkboard-user",
+        label: "جلسات",
+        describe: "30",
+      },
+    ],
+    details: [
       { label: "نام دوره", describe: "JavaScript" },
       { label: "پیش نیاز", describe: "HTML و CSS" },
       { label: "امکان برگزاری به صورت فشرده", describe: "دارد" },
       { label: "بهای در صورت فشرده بودن دوره", describe: "3,299,000 تومان" },
       { label: "روش آموزش", describe: "ترکیبی" },
-      { label: "زمان کل دوره", describe: "30 ساعت" },
-      { label: "جلسات", describe: "30" },
     ],
     paragraphs: [
       {
@@ -242,16 +271,30 @@ export const courses = [
     registerLink: "/courses/register-form",
     rank: 1,
     capacity: "11",
-    registered: 20,
-
     specs: [
+      {
+        icon: "fa-duotone fa-light fa-graduation-cap",
+        label: "شرکت کنندگان",
+        describe: 20,
+      },
+      {
+        icon: "fa-duotone fa-solid fa-clock-desk",
+        label: "زمان کل دوره",
+        describe: "10 ساعت",
+      },
+      {
+        icon: "fa-duotone fa-regular fa-chalkboard-user",
+        label: "جلسات",
+        describe: "10",
+      },
+    ],
+
+    details: [
       { label: "نام دوره", describe: "Tailwind" },
       { label: "پیش نیاز", describe: "HTML و CSS" },
       { label: "امکان برگزاری به صورت فشرده", describe: "دارد" },
       { label: "بهای در صورت فشرده بودن دوره", describe: "999,000 تومان" },
       { label: "روش آموزش", describe: "پروژه محور" },
-      { label: "زمان کل دوره", describe: "10 ساعت" },
-      { label: "جلسات", describe: "10" },
     ],
     paragraphs: [
       {
@@ -336,16 +379,30 @@ export const courses = [
     registerLink: "/courses/register-form",
     rank: 2,
     capacity: "11",
-    registered: 20,
-
     specs: [
+      {
+        icon: "fa-duotone fa-light fa-graduation-cap",
+        label: "شرکت کنندگان",
+        describe: 20,
+      },
+      {
+        icon: "fa-duotone fa-solid fa-clock-desk",
+        label: "زمان کل دوره",
+        describe: "12 ساعت",
+      },
+      {
+        icon: "fa-duotone fa-regular fa-chalkboard-user",
+        label: "جلسات",
+        describe: "12",
+      },
+    ],
+
+    details: [
       { label: "نام دوره", describe: "Bootstrap" },
       { label: "پیش نیاز", describe: "HTML و CSS" },
       { label: "امکان برگزاری به صورت فشرده", describe: "دارد" },
       { label: "بهای در صورت فشرده بودن دوره", describe: "999,000 تومان" },
       { label: "روش آموزش", describe: "پروژه محور" },
-      { label: "زمان کل دوره", describe: "12 ساعت" },
-      { label: "جلسات", describe: "12" },
     ],
     paragraphs: [
       {
@@ -416,15 +473,29 @@ export const courses = [
     registerLink: "/courses/register-form",
     rank: 1,
     capacity: "32",
-    registered: 20,
     specs: [
+      {
+        icon: "fa-duotone fa-light fa-graduation-cap",
+        label: "شرکت کنندگان",
+        describe: 20,
+      },
+      {
+        icon: "fa-duotone fa-solid fa-clock-desk",
+        label: "زمان کل دوره",
+        describe: "20 ساعت",
+      },
+      {
+        icon: "fa-duotone fa-regular fa-chalkboard-user",
+        label: "جلسات",
+        describe: "20",
+      },
+    ],
+    details: [
       { label: "نام دوره", describe: "پایتون ابتدایی" },
       { label: "پیش نیاز", describe: "هیچی" },
       { label: "امکان برگزاری به صورت فشرده", describe: "دارد" },
       { label: "بهای در صورت فشرده بودن دوره", describe: "3,299,000 تومان" },
       { label: "روش آموزش", describe: "مرحله ای" },
-      { label: "زمان کل دوره", describe: "20 ساعت" },
-      { label: "جلسات", describe: "20" },
     ],
     paragraphs: [
       {
@@ -509,14 +580,28 @@ export const courses = [
     registerLink: "/courses/register-form",
     rank: 2,
     capacity: "19",
-    registered: 20,
     specs: [
+      {
+        icon: "fa-duotone fa-light fa-graduation-cap",
+        label: "شرکت کنندگان",
+        describe: 20,
+      },
+      {
+        icon: "fa-duotone fa-solid fa-clock-desk",
+        label: "زمان کل دوره",
+        describe: "25 ساعت",
+      },
+      {
+        icon: "fa-duotone fa-regular fa-chalkboard-user",
+        label: "جلسات",
+        describe: "25",
+      },
+    ],
+    details: [
       { label: "نام دوره", describe: "پایتون پیشرفته" },
       { label: "پیش نیاز", describe: "پایتون ابتدایی" },
       { label: "امکان برگزاری به صورت فشرده", describe: "ندارد" },
       { label: "روش آموزش", describe: "پروژه محور" },
-      { label: "زمان کل دوره", describe: "25 ساعت" },
-      { label: "جلسات", describe: "25" },
     ],
     paragraphs: [
       {
@@ -630,15 +715,29 @@ export const courses = [
     registerLink: "/courses/register-form",
     rank: 2,
     capacity: "24",
-    registered: 20,
     specs: [
+      {
+        icon: "fa-duotone fa-light fa-graduation-cap",
+        label: "شرکت کنندگان",
+        describe: 20,
+      },
+      {
+        icon: "fa-duotone fa-solid fa-clock-desk",
+        label: "زمان کل دوره",
+        describe: "35 ساعت",
+      },
+      {
+        icon: "fa-duotone fa-regular fa-chalkboard-user",
+        label: "جلسات",
+        describe: "35",
+      },
+    ],
+    details: [
       { label: "نام دوره", describe: "#C" },
       { label: "پیش نیاز", describe: "هیچی" },
       { label: "امکان برگزاری به صورت فشرده", describe: "دارد" },
       { label: "بهای در صورت فشرده بودن دوره", describe: "3,599,000 تومان" },
       { label: "روش آموزش", describe: "ترکیبی" },
-      { label: "زمان کل دوره", describe: "35 ساعت" },
-      { label: "جلسات", describe: "35" },
     ],
     paragraphs: [
       {
@@ -736,15 +835,29 @@ export const courses = [
     registerLink: "/courses/register-form",
     rank: 2,
     capacity: "30",
-    registered: 20,
     specs: [
+      {
+        icon: "fa-duotone fa-light fa-graduation-cap",
+        label: "شرکت کنندگان",
+        describe: 20,
+      },
+      {
+        icon: "fa-duotone fa-solid fa-clock-desk",
+        label: "زمان کل دوره",
+        describe: "40 ساعت",
+      },
+      {
+        icon: "fa-duotone fa-regular fa-chalkboard-user",
+        label: "جلسات",
+        describe: "40",
+      },
+    ],
+    details: [
       { label: "نام دوره", describe: "++C" },
       { label: "پیش نیاز", describe: "هیچی" },
       { label: "امکان برگزاری به صورت فشرده", describe: "دارد" },
       { label: "بهای در صورت فشرده بودن دوره", describe: "4,999,000 تومان" },
       { label: "روش آموزش", describe: "مرحله ای" },
-      { label: "زمان کل دوره", describe: "40 ساعت" },
-      { label: "جلسات", describe: "40" },
     ],
     paragraphs: [
       {
@@ -834,15 +947,29 @@ export const courses = [
     registerLink: "/courses/register-form",
     rank: 11,
     capacity: "7",
-    registered: 20,
     specs: [
+      {
+        icon: "fa-duotone fa-light fa-graduation-cap",
+        label: "شرکت کنندگان",
+        describe: 20,
+      },
+      {
+        icon: "fa-duotone fa-solid fa-clock-desk",
+        label: "زمان کل دوره",
+        describe: "38 ساعت",
+      },
+      {
+        icon: "fa-duotone fa-regular fa-chalkboard-user",
+        label: "جلسات",
+        describe: "38",
+      },
+    ],
+    details: [
       { label: "نام دوره", describe: "Java" },
       { label: "پیش نیاز", describe: "هیچی" },
       { label: "امکان برگزاری به صورت فشرده", describe: "دارد" },
       { label: "بهای در صورت فشرده بودن دوره", describe: "3,599,000 تومان" },
       { label: "روش آموزش", describe: "پروژه محور" },
-      { label: "زمان کل دوره", describe: "38 ساعت" },
-      { label: "جلسات", describe: "38" },
     ],
     paragraphs: [
       {
@@ -921,14 +1048,28 @@ export const courses = [
     registerLink: "/courses/register-form",
     rank: 2,
     capacity: "14",
-    registered: 20,
     specs: [
+      {
+        icon: "fa-duotone fa-light fa-graduation-cap",
+        label: "شرکت کنندگان",
+        describe: 20,
+      },
+      {
+        icon: "fa-duotone fa-solid fa-clock-desk",
+        label: "زمان کل دوره",
+        describe: "30 ساعت",
+      },
+      {
+        icon: "fa-duotone fa-regular fa-chalkboard-user",
+        label: "جلسات",
+        describe: "30",
+      },
+    ],
+    details: [
       { label: "نام دوره", describe: "Unrael Engin" },
       { label: "پیش نیاز", describe: "هیچی" },
       { label: "امکان برگزاری به صورت فشرده", describe: "ندارد" },
       { label: "روش آموزش", describe: "پروژه محور" },
-      { label: "زمان کل دوره", describe: "30 ساعت" },
-      { label: "جلسات", describe: "30" },
     ],
     paragraphs: [
       {
@@ -1029,14 +1170,28 @@ export const courses = [
     registerLink: "/courses/register-form",
     rank: 2,
     capacity: "19",
-    registered: 20,
     specs: [
+      {
+        icon: "fa-duotone fa-light fa-graduation-cap",
+        label: "شرکت کنندگان",
+        describe: 20,
+      },
+      {
+        icon: "fa-duotone fa-solid fa-clock-desk",
+        label: "زمان کل دوره",
+        describe: "32 ساعت",
+      },
+      {
+        icon: "fa-duotone fa-regular fa-chalkboard-user",
+        label: "جلسات",
+        describe: "32",
+      },
+    ],
+    details: [
       { label: "نام دوره", describe: "Unity 6" },
       { label: "پیش نیاز", describe: "هیچی" },
       { label: "امکان برگزاری به صورت فشرده", describe: "ندارد" },
       { label: "روش آموزش", describe: "پروژه محور" },
-      { label: "زمان کل دوره", describe: "32 ساعت" },
-      { label: "جلسات", describe: "32" },
     ],
     paragraphs: [
       {
@@ -1123,15 +1278,29 @@ export const courses = [
     registerLink: "/courses/register-form",
     rank: 2,
     capacity: "20",
-    registered: 20,
     specs: [
+      {
+        icon: "fa-duotone fa-light fa-graduation-cap",
+        label: "شرکت کنندگان",
+        describe: 20,
+      },
+      {
+        icon: "fa-duotone fa-solid fa-clock-desk",
+        label: "زمان کل دوره",
+        describe: "24 ساعت",
+      },
+      {
+        icon: "fa-duotone fa-regular fa-chalkboard-user",
+        label: "جلسات",
+        describe: "24",
+      },
+    ],
+    details: [
       { label: "نام دوره", describe: "Scratch Junior" },
       { label: "پیش نیاز", describe: "هیچی" },
       { label: "امکان برگزاری به صورت فشرده", describe: "دارد" },
       { label: "بهای در صورت فشرده بودن دوره", describe: "2,199,000 تومان" },
       { label: "روش آموزش", describe: "ترکیبی" },
-      { label: "زمان کل دوره", describe: "24 ساعت" },
-      { label: "جلسات", describe: "24" },
     ],
     paragraphs: [
       {

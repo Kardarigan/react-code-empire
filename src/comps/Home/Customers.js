@@ -22,7 +22,7 @@ const Customers = () => {
             perPage: 3,
             breakpoints: {
               640: {
-                perPage: 2,
+                perPage: 1,
               },
             },
             focus: "center",

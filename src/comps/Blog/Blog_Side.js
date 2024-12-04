@@ -1,13 +1,12 @@
 import { Link } from "react-router-dom";
 import { blogs } from "../../data/Blogs";
-import { socialButtons } from "../../data/Constants";
 
 const Blog_Side = ({ author }) => {
   const latestBlogs = blogs.slice(-3).reverse();
 
   return (
-    <aside className="flex flex-col gap-y-5 max-lg:mt-12">
-      <section className="mac-border bg-blue-400 py-2 flex-seperate">
+    <aside className="flex flex-col gap-y-5 max-lg:mt-12 lg:col-span-1">
+      <section className="mac-border bg-blue-400 py-3 flex-seperate">
         <span className="text-slate-100">نویسنده :</span>
         <h5 className="text-slate-50">{author}</h5>
       </section>
@@ -28,9 +27,11 @@ const Blog_Side = ({ author }) => {
                   alt={item.title}
                   className="size-20 rounded-lg"
                 />
-                <div>
-                  <h3>{item.title}</h3>
-                  <span className="warn text-xs px-2">{item.category}</span>
+                <div className="flex flex-col justify-between">
+                  <h3 className="line-clamp-2 text-ellipsis">{item.title}</h3>
+                  <div>
+                    <span className="warn text-xs px-2">{item.category}</span>
+                  </div>
                 </div>
               </Link>
             );

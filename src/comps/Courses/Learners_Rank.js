@@ -4,9 +4,9 @@ import { learnersRank } from "../../data/Ranking";
 const Learners_Rank = () => {
   const tableHeading = ["جایگاه", "پروفایل", "نام", "وضعیت", "رتبه", "دوره"];
   return (
-    <section className="container text-center px-5 padding-y">
+    <section className="container text-center px-5 padding-y mt-24">
       <h3 className="title-lg">
-        <span className="mac-bg">برترین دانشجویان شهریور ماه</span>
+        <span className="mac-bg">برترین دانشجویان آبان ماه</span>
       </h3>
       <div className="rounded-xl overflow-hidden mt-12 border-2 border-slate-500">
         <table className="w-full">

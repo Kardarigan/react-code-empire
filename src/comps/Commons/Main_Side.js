@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 const Main_Side = ({
   details,
+  specs,
   link,
   price = false,
   capacity = false,
@@ -30,6 +31,17 @@ const Main_Side = ({
             <h5>{capacity > 0 ? `${capacity} نفر` : "ظرفیت پر شد"}</h5>
           </section>
         )}
+        <section className="flex-seperate gap-x-5 text-center text-slate-50">
+          {specs.map((item, index) => {
+            return (
+              <div className="bg w-1/3 py-5 rounded-3xl" key={index}>
+                <i className={item.icon + " title"} />
+                <h5 className="font-thin opacity-75 text-xs">{item.label}</h5>
+                <h5 className="title-sm">{item.describe}</h5>
+              </div>
+            );
+          })}
+        </section>
         <section className="warn pt-2 pb-5">
           <h4 className="title">
             <i className="fa-solid fa-hashtag"></i> مشخصات
@@ -38,8 +50,8 @@ const Main_Side = ({
             {details.map((item, index) => {
               return (
                 <li className="flex-seperate warn bg-blue-400" key={index}>
-                  <span className="font-bold">{item.label} :</span>
-                  <span>{item.describe}</span>
+                  <h5 className="font-bold">{item.label} :</h5>
+                  <h5>{item.describe}</h5>
                 </li>
               );
             })}

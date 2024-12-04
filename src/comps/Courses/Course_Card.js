@@ -10,11 +10,11 @@ const Course_Card = ({ thing }) => {
   return (
     <Link
       ref={ref}
-      to={thing.path}
+      to={"/courses/" + thing.path}
       className={`text-center rounded-lg relative transition-all duration-300 group hover:scale-105 ${className}`}
     >
       <div
-        className="max-w-[90%] w-full absolute right-[5%] rounded-xl"
+        className="max-w-[90%] w-full absolute right-[5%] rounded-3xl"
         style={{
           backgroundColor: thing.color[0],
           background: `linear-gradient(0deg, ${thing.color[0]} 0%, ${thing.color[1]} 100%)`,
@@ -40,7 +40,7 @@ const Course_Card = ({ thing }) => {
         </div>
         <h4 className="absolute para-sm left-2 top-2 bg-opacity-40 px-2 pt-1 pb-1 bg-slate-100 rounded-full">
           <i className="fas fa-user me-1" />
-          {thing.registered}
+          {thing.specs[0].describe}
         </h4>
       </div>
       <div className="mac-border mt-12 pt-36 pb-5 text-start">

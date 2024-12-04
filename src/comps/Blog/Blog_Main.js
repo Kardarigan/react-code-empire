@@ -2,7 +2,7 @@ import { Article, FAQ, Share } from "../Portal";
 
 const Blog_Main = ({ blog }) => {
   return (
-    <main className="grid gap-y-12 lg:col-span-3">
+    <main className="grid gap-y-12 lg:col-span-2">
       <div>
         <div className="flex-seperate mac-border py-3">
           <span className="warn">{blog.category}</span>

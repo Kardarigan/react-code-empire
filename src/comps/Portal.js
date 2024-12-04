@@ -54,8 +54,10 @@ import Rules_Scroll from "./Company/Rules_Scroll";
 import Stand from "./Home/Stand";
 import Share from "./Commons/Share";
 import Breadcrumb from "./Commons/Breadcrumb";
+import Magazin from "./Home/Magazin";
 
 export {
+  Magazin,
   Breadcrumb,
   Share,
   Stand,

@@ -10,30 +10,31 @@ import Home_Ways from "../assets/pages/home-ways.png";
 
 export const navLinks = [
   { href: "/", label: "خانه" },
-  { href: "/blog", label: "بلاگ" },
-  {
-    href: "/about",
-    label: "درباره",
-  },
   {
     href: "/courses",
     label: "دوره ها",
+  },
+  { href: "/blog", label: "مقالات" },
+  { href: "/contact", label: "ارتباط باما" },
+  {
+    href: "/about",
+    label: "درباره",
   },
 ];
 
 export const hamburgerLinks = [
   { href: "/", label: "خانه" },
-  { href: "/blog", label: "بلاگ" },
-  {
-    href: "/about",
-    label: "درباره",
-  },
   {
     href: "/courses",
     label: "دوره ها",
   },
-  { href: "/policy", label: "قوانین" },
+  { href: "/blog", label: "مقالات" },
   { href: "/contact", label: "ارتباط باما" },
+  {
+    href: "/about",
+    label: "درباره",
+  },
+  { href: "/policy", label: "قوانین" },
 ];
 
 export const footLinks = [

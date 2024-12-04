@@ -9,8 +9,11 @@ const Breadcrumb = () => {
   }
   return (
     <nav className="text-gray-400 bg-slate-50 px-5 py-2">
-      <div className="container flex space-x-2 items-center md:px-16 px-5 para-lil">
-        <Link to="/" className="hover:underline me-2">
+      <div
+        className="container flex space-x-2 items-center md:px-16 px-5 para-lil"
+        title="شما اینجا هستید."
+      >
+        <Link to="/" className="hover:underline  hover:text-slate-700 me-2">
           Home
         </Link>
 
@@ -19,7 +22,9 @@ const Breadcrumb = () => {
           const isLast = index === pathnames.length - 1;
           return (
             <React.Fragment key={to}>
-              <span className="mx-2">/</span>
+              <span className="mx-2">
+                <i class="fa-duotone fa-solid fa-sword rotate-[225deg]" />
+              </span>
               {isLast ? (
                 <span className="text-gray-600">
                   {capitalizeFirstLetter(
@@ -27,7 +32,7 @@ const Breadcrumb = () => {
                   )}
                 </span>
               ) : (
-                <Link to={to} className="hover:underline">
+                <Link to={to} className="hover:underline hover:text-slate-700">
                   {capitalizeFirstLetter(
                     decodeURIComponent(segment).replaceAll("-", " ")
                   )}

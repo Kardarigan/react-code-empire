@@ -22,7 +22,7 @@ const Single_Blog = () => {
     <>
       <Hero title={theBlog.title} background={theBlog.cover} />
       <Breadcrumb />
-      <section className="grid lg:grid-cols-4 gap-8 container padding">
+      <section className="grid lg:grid-cols-3 gap-8 container padding">
         <Blog_Main blog={theBlog} />
         <Blog_Side author={theBlog.author} />
       </section>
