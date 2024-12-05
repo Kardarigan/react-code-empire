@@ -96,12 +96,12 @@
       @apply border-2 border-blue-400 rounded-[25px] px-4;
     }
     &-bg {
-      background: rgb(135, 76, 204);
+      background: rgb(59, 130, 246);
       background: linear-gradient(
         90deg,
-        rgba(135, 76, 204, 1) 0%,
-        rgba(135, 76, 204, 0.3537146931950568) 68%,
-        rgba(135, 76, 204, 0.20976369778923742) 100%
+        rgba(59, 130, 246, 1) 0%,
+        rgba(59, 130, 246, 0.3537146931950568) 68%,
+        rgba(59, 130, 246, 0.20976369778923742) 100%
       );
       @apply px-5 rounded-full;
     }
@@ -121,12 +121,12 @@
 }
 @layer utilities {
   .halfbg-right {
-    background: linear-gradient(109.6deg, transparent 20%, #874ccc 98%);
+    background: linear-gradient(109.6deg, transparent 20%, #3b82f6 98%);
     @apply pr-5 rounded-full;
   }
 
   .halfbg-left {
-    background: linear-gradient(109deg, #874ccc -20%, transparent 70%);
+    background: linear-gradient(109deg, #3b82f6 -20%, transparent 70%);
     @apply pl-5 rounded-full;
   }
   .padding {

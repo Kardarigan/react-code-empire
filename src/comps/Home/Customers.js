@@ -6,7 +6,7 @@ const Customers = () => {
   return (
     <section className="padding-x py-10">
       <h2 className="title">
-        <i className="fa-solid fa-hashtag text-purple-500" />
+        <i className="fa-solid fa-hashtag text-blue-500" />
         <span className="halfbg-left"> چیز که دیگران دربارمون میگن</span>
       </h2>
       <div dir="ltr" className="mt-24">

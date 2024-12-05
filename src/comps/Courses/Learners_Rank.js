@@ -45,7 +45,7 @@ const Learners_Rank = () => {
                         درحال یادگیری
                       </span>
                     ) : (
-                      <span className="rounded bg-purple-600 text-purple-100 p-2">
+                      <span className="rounded bg-blue-600 text-blue-100 p-2">
                         پـایـان یادگیری
                       </span>
                     )}
@@ -53,7 +53,7 @@ const Learners_Rank = () => {
                   <td className="p-5">
                     {item.rank}
                     {item.rank === "جاویدان" && (
-                      <i className="fa-duotone fa-solid fa-crown text-purple-400 ms-1" />
+                      <i className="fa-duotone fa-solid fa-crown text-blue-400 ms-1" />
                     )}
                   </td>
                   <td className="p-5 max-md:hidden">{item.course}</td>

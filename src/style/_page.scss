@@ -16,7 +16,7 @@
   @apply grid gap-y-5 list-disc ps-8 para;
   li {
     &::marker {
-      @apply text-purple-500;
+      @apply text-blue-500;
     }
   }
 }

@@ -9,11 +9,7 @@ const Benefit_Card = ({ benefit, i }) => {
       ref={ref}
     >
       <div className="flex-fullcenter flex-col">
-        <i
-          className={
-            benefit.icon + " title-lg text-purple-400 group-hover:animate-pulse"
-          }
-        />
+        <i className={benefit.icon + " title-lg group-hover:animate-pulse"} />
         <div className="md:text-[9px] text-[5px] text-slate-300 flex gap-x-1 mt-3">
           {[...Array(4)].map((_, idx) => (
             <i

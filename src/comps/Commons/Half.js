@@ -44,12 +44,12 @@ const Half = ({ thing, reverse = false }) => {
             <img
               src={thing.cover}
               alt={thing.title}
-              className="w-full bg-fullobject ghost rounded filter-indigo"
+              className="w-full bg-fullobject ghost rounded filter-blue"
             />
           )}
         </div>
         <span
-          className={`absolute max-md:hidden text-purple-500 ${
+          className={`absolute max-md:hidden ${
             reverse ? "" : "left-0"
           } translate-y-[-150%] md:text-9xl hover:rotate-180 transition-all`}
         >

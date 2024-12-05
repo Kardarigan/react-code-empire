@@ -11,7 +11,7 @@ const Home_Hero = () => {
       <div className="w-full text-center absolute z-10 mt-24">
         <div className="text-7xl text-slate-50 mx-auto padding max-w-[800px]">
           <h1>امپــراتـــوری</h1>
-          <h1 className="text-purple-500">کــــــــــــــــــد</h1>
+          <h1 className="text-blue-400">کــــــــــــــــــد</h1>
           <p className="text-base max-sm:text-sm">
             <TypeAnimation
               sequence={[

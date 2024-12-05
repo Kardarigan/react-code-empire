@@ -10,14 +10,14 @@ const Top_Image_Section = ({ title = null, label = null, describe, cover }) => {
           ref={ref}
           src={cover}
           alt={title}
-          className={`w-full rounded-lg max-h-[80vh] bg-fullobject filter-indigo ${className}`}
+          className={`w-full rounded-lg max-h-[80vh] bg-fullobject filter-blue ${className}`}
         />
         {label && <p className="label">* {label}</p>}
       </div>
       {title && (
         <h2 className="title-lg">
-          <i className="fa-solid fa-hashtag text-purple-500" />
-          <span className="halfbg-left"> {title}</span>
+          <i className="fa-solid fa-hashtag" />
+          <span className="halfbg-left">{title}</span>
         </h2>
       )}
       <p className="para">{describe}</p>

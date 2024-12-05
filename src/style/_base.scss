@@ -39,9 +39,6 @@ body {
 }
 
 .filter {
-  &-indigo {
-    filter: hue-rotate(250deg);
-  }
   &-blue {
     filter: hue-rotate(180deg);
   }
@@ -147,4 +144,8 @@ body {
   &-top {
     @apply border-t-[20px] border-t-blue-950;
   }
+}
+
+.fa-hashtag {
+  @apply text-blue-500;
 }

@@ -10,7 +10,7 @@ const Courses_Section = ({ course }) => {
     <div className="mt-24">
       <div className="flex-seperate">
         <h2 className="title">
-          <i className="fa-solid fa-hashtag text-purple-500 me-2" />
+          <i className="fa-solid fa-hashtag me-2" />
           <span className="halfbg-left">{course.title}</span>
         </h2>
         {!isCoursePage && (
@@ -23,7 +23,7 @@ const Courses_Section = ({ course }) => {
           </Link>
         )}
       </div>
-      <hr className="border-purple-500 my-5" />
+      <hr className="border-blue-500 my-5" />
       <div className="grid lg:grid-cols-3 gap-5">
         {course.courses.map((item, index) => {
           return <Course_Card thing={item} key={index} />;

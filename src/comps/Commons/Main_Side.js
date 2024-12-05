@@ -19,12 +19,12 @@ const Main_Side = ({
       <div className="flex flex-col gap-y-3 sticky top-20">
         {(capacity || capacity === 0) && (
           <section
-            className={`py-3 warn flex-seperate ${
+            className={`py-3 mac-border text-slate-50 flex-seperate ${
               capacity === 0
                 ? "border-red-500 bg-red-500 text-slate-50"
                 : capacity < 10
                 ? "border-yellow-400 bg-yellow-400 text-slate-900"
-                : "text-slate-50"
+                : "text-slate-50 bg"
             }`}
           >
             <h5>ظرفیت دوره :</h5>
@@ -49,7 +49,10 @@ const Main_Side = ({
           <ul className="grid gap-y-3 mt-5">
             {details.map((item, index) => {
               return (
-                <li className="flex-seperate warn bg-blue-400" key={index}>
+                <li
+                  className="flex-seperate rounded-full bg-blue-500 px-5"
+                  key={index}
+                >
                   <h5 className="font-bold">{item.label} :</h5>
                   <h5>{item.describe}</h5>
                 </li>
