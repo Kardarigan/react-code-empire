@@ -941,7 +941,7 @@ export const courses = [
     path: "java",
     category: "software",
     describe: "برنامه نویسی با Java (ربطی به JavaScript نداره!)",
-    price: 38990000,
+    price: 3899000,
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
     color: ["#4c334d", "#7c2e41"],
     registerLink: "/courses/register-form",

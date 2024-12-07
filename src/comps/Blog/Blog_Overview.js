@@ -4,40 +4,59 @@ import { blogs } from "../../data/Blogs";
 import { Blog_Card } from "../Portal";
 
 const Blog_Overview = () => {
-  const [category, setCategory] = useState("همه");
+  const [category, setCategory] = useState("");
   const [searchValue, setSearchValue] = useState("");
   const [sort, setSort] = useState(0);
   const [page, setPage] = useState(1);
   const blogsPerPage = 9;
 
-  const handleCategoryChange = () => {
-    let selectedCategory = document.getElementById("category").value;
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hashCategory =
+        decodeURIComponent(window.location.hash.slice(1)) || "";
+
+      if (categories.includes(hashCategory)) {
+        setCategory(hashCategory);
+      } else if (window.location.pathname.endsWith("/blog")) {
+        setCategory("همه");
+      } else {
+        setCategory("");
+      }
+    };
+
+    handleHashChange();
+    window.addEventListener("hashchange", handleHashChange);
+
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (category === "همه") {
+      window.location.hash = "";
+    } else if (category) {
+      window.location.hash = encodeURIComponent(category);
+    }
+  }, [category]);
+
+  const handleCategoryChange = (e) => {
+    const selectedCategory = e.target.value;
     setCategory(selectedCategory);
     setPage(1);
-  };
-
-  const handleSearch = () => {
-    let searchedThing = document.getElementById("search").value;
-    setSearchValue(searchedThing);
-    setPage(1);
-  };
-
-  const handleSort = (index) => {
-    setSort(index);
   };
 
   const filteredBlogs = useMemo(() => {
     let sortedBlogs = [...blogs];
 
     sortedBlogs.reverse();
-
     if (sort === 1) {
       sortedBlogs.reverse();
     } else if (sort === 2) {
       sortedBlogs.sort((a, b) => a.suggested - b.suggested);
     }
 
-    if (category !== "همه") {
+    if (category && category !== "همه") {
       sortedBlogs = sortedBlogs.filter((blog) => blog.category === category);
     }
 
@@ -94,7 +113,11 @@ const Blog_Overview = () => {
             id="category"
             className="select"
             onChange={handleCategoryChange}
+            value={category || ""}
           >
+            <option value="" disabled>
+              انتخاب دسته
+            </option>
             {categories.map((item, index) => (
               <option key={index} value={item}>
                 {item}
@@ -103,7 +126,11 @@ const Blog_Overview = () => {
           </select>
         </div>
         <div className="flex py-2 gap-x-3 md:min-w-[35vw] min-w-full mac-border rounded-full bg-blue-500 text-blue-50">
-          <button onClick={handleSearch}>
+          <button
+            onClick={() =>
+              setSearchValue(document.getElementById("search").value)
+            }
+          >
             <i className="fas fa-magnifying-glass"></i>
           </button>
           <input
@@ -120,7 +147,7 @@ const Blog_Overview = () => {
                 className={`cursor-pointer ${
                   index === sort && "text-blue-600"
                 }`}
-                onClick={() => handleSort(index)}
+                onClick={() => setSort(index)}
               >
                 {item}
               </span>
@@ -142,11 +169,11 @@ const Blog_Overview = () => {
         ) : (
           <>
             <button
-              onClick={handleNextPage}
-              className={isLastPage ? "opacity-70" : ""}
-              disabled={isLastPage}
+              onClick={handlePrevPage}
+              className={isFirstPage ? "opacity-70" : ""}
+              disabled={isFirstPage}
             >
-              پس
+              پیش
             </button>
             <select
               id="pageSelect"
@@ -162,11 +189,11 @@ const Blog_Overview = () => {
               )}
             </select>
             <button
-              onClick={handlePrevPage}
-              className={isFirstPage ? "opacity-70" : ""}
-              disabled={isFirstPage}
+              onClick={handleNextPage}
+              className={isLastPage ? "opacity-70" : ""}
+              disabled={isLastPage}
             >
-              پیش
+              پس
             </button>
           </>
         )}
