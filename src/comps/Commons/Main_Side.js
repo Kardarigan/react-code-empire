@@ -44,7 +44,7 @@ const Main_Side = ({
         </section>
         <section className="warn pt-2 pb-5">
           <h4 className="title">
-            <i className="fa-solid fa-hashtag"></i> مشخصات
+            <i className="fa-solid fa-hashtag"></i>مشخصات
           </h4>
           <ul className="grid gap-y-3 mt-5">
             {details.map((item, index) => {

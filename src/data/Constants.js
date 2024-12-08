@@ -38,9 +38,66 @@ export const hamburgerLinks = [
 ];
 
 export const footLinks = [
-  { href: "/policy", label: "قوانین" },
-  { href: "/contact", label: "ارتباط باما" },
-  { href: "/about", label: "Code Empire © 2024" },
+  {
+    title: "ما کی هستیم؟",
+    class: "md:col-span-2",
+    describe:
+      "می‌توان گفت امپراتوری کد بی‌همتاست و هیچ رقیبی ندارد! آکادمی‌ای که نه‌تنها برنامه‌نویسی را آموزش می‌دهد، بلکه آینده حرفه‌ای تو را در دنیای فناوری و برنامه‌نویسی می‌سازد.",
+  },
+  {
+    title: "بخش های وبسایت",
+    class: "md:col-span-1",
+    links: [
+      {
+        label: "خانه",
+        path: "/",
+      },
+      {
+        label: "دوره ها",
+        path: "/courses",
+      },
+      {
+        label: "مجله‌ی امپراتوری",
+        path: "/blog",
+      },
+    ],
+  },
+  {
+    title: "امپراتوری کد",
+    class: "md:col-span-1",
+    links: [
+      {
+        label: "منشور قوانین",
+        path: "/policy",
+      },
+      {
+        label: "ارتباط باما",
+        path: "/contact",
+      },
+      {
+        label: "درباره",
+        path: "/about",
+      },
+    ],
+  },
+  {
+    title: "ارتباط سریع",
+    class: "md:col-span-1",
+    ways: [
+      {
+        label: "ایمیل",
+        icon: "fa-solid fa-envelope",
+        info: "info@codeempire.ir",
+        href: "mailto:info@codeempire.ir",
+      },
+      {
+        label: "تلگرام",
+        icon: "fa-brands fa-telegram",
+        info: "@codeempire_support",
+        href: "https://t.me/username",
+      },
+    ],
+  },
 ];
 
 export const socialButtons = [

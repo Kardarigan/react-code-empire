@@ -4,7 +4,7 @@ const Overall = ({ thing, light = false }) => {
   return (
     <section
       className={`h-screen padding-x mt-40 pb-24 text-center flex flex-col justify-center ${
-        light ? "bg-slate-50" : "bg-slate-900"
+        light ? "bg-slate-50" : "bg-slate-800"
       }`}
     >
       <h2 className={`title-lg ${!light && "text-slate-50"}`}>

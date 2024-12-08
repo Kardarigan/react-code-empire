@@ -13,7 +13,7 @@ const Blog_Side = ({ author }) => {
       </section>
       <section className="mac-border pt-2 pb-5">
         <h4 className="title-sm">
-          <i className="fa-solid fa-hashtag"></i> آخرین مطالب
+          <i className="fa-solid fa-hashtag"></i>آخرین مطالب
         </h4>
         <div className="grid gap-y-5 my-8">
           {latestBlogs.map((item, index) => {
@@ -44,7 +44,7 @@ const Blog_Side = ({ author }) => {
       </section>
       <section className="mac-border pt-2 pb-5">
         <h4 className="title-sm">
-          <i className="fa-solid fa-hashtag"></i> دسته‌بندی ها
+          <i className="fa-solid fa-hashtag"></i>دسته‌بندی ها
         </h4>
         <nav className="mt-5">
           <ul className="grid gap-y-1">

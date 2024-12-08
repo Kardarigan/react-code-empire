@@ -10,7 +10,7 @@ const Courses_Section = ({ course }) => {
     <div className="mt-24">
       <div className="flex-seperate">
         <h2 className="title">
-          <i className="fa-solid fa-hashtag me-2" />
+          <i className="fa-solid fa-hashtag" />
           <span className="halfbg-left">{course.title}</span>
         </h2>
         {!isCoursePage && (

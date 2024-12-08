@@ -33,7 +33,7 @@ const Article = ({ article, icons = true, gap = "gap-y-24" }) => {
             )}
             {item.title && (
               <h2 className="title halfbg-left inline">
-                {icons && <i className="fa-solid fa-hashtag me-2" />}
+                {icons && <i className="fa-solid fa-hashtag" />}
                 {item.title}
               </h2>
             )}
