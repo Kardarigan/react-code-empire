@@ -20,7 +20,6 @@ const Courses = () => {
       <Learners_Rank />
       <Course_Benefits />
       <FAQ questions={coursesQuestions} className="container padding" />
-      <Overall thing={coursesOverall} />
     </>
   );
 };

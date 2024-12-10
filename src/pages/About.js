@@ -42,7 +42,6 @@ const About = () => {
       </div>
       <About_Team />
       <p className="label opacity-30 text-center">Long live the Empire</p>
-      <Overall thing={about.overall} />
     </>
   );
 };

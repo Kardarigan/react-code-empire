@@ -115,9 +115,6 @@
   .card {
     @apply bg text-slate-100 border-2 border-slate-200 size-full flex p-12 rounded-3xl;
   }
-  .preview {
-    @apply;
-  }
 }
 @layer utilities {
   .halfbg-right {

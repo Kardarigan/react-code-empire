@@ -26,7 +26,6 @@ const Single_Blog = () => {
         <Blog_Main blog={theBlog} />
         <Blog_Side author={theBlog.author} />
       </section>
-      <Overall thing={singleBlogOverall} />
     </>
   );
 };

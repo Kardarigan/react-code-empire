@@ -55,8 +55,10 @@ import Stand from "./Home/Stand";
 import Share from "./Commons/Share";
 import Breadcrumb from "./Commons/Breadcrumb";
 import Magazin from "./Home/Magazin";
+import Footer_Journal from "./Commons/Footer_Journal";
 
 export {
+  Footer_Journal,
   Magazin,
   Breadcrumb,
   Share,

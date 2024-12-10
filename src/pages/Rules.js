@@ -15,7 +15,6 @@ const Rules = () => {
         بخوانید. از توجه شما سپاسگزاریم.
       </p>
       <Rules_Overview />
-      <Overall thing={policyOverall} />
     </>
   );
 };

@@ -53,7 +53,7 @@ export const footLinks = [
         path: "/",
       },
       {
-        label: "دوره ها",
+        label: "دوره های آموزشی",
         path: "/courses",
       },
       {
@@ -75,7 +75,7 @@ export const footLinks = [
         path: "/contact",
       },
       {
-        label: "درباره",
+        label: "درباره امپراتوری",
         path: "/about",
       },
     ],

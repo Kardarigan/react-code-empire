@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Overall = ({ thing, light = false }) => {
   return (
     <section
-      className={`h-screen padding-x mt-40 pb-24 text-center flex flex-col justify-center ${
+      className={`h-[400px] padding-x mt-40 pb-24 text-center flex flex-col justify-center ${
         light ? "bg-slate-50" : "bg-slate-800"
       }`}
     >

@@ -39,7 +39,6 @@ const Home = () => {
       <Magazin />
       <Instagram />
       <Customers />
-      <Overall thing={homeOverall} />
     </>
   );
 };

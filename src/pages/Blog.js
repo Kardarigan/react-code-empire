@@ -10,7 +10,6 @@ const Blog = () => {
       />
       <Breadcrumb />
       <Blog_Overview />
-      <Overall thing={blogOverall} />
     </>
   );
 };

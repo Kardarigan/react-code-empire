@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
 import { footLinks, socialButtons } from "../../data/Constants";
+import Footer_Journal from "./Footer_Journal";
 
 const Footer = () => {
   return (
     <footer
-      className="w-full bg-slate-900 text-slate-100 text-xs text-center z-20 md:mt-24 mt-12 padding-x"
+      className="w-full bg-slate-900 text-slate-100 text-xs text-center z-20 lg:mt-72 mt-60 padding-x max-lg:pt-24"
       dir="rtl"
     >
-      <div className="absolute left-0 right-0 w-[70vw] bg-blue-900"></div>
-      <section className="grid md:grid-cols-5 gap-12 text-start padding">
+      <Footer_Journal />
+      <section className="grid lg:grid-cols-5 gap-12 text-start padding">
         {footLinks.map((item, index) => {
           return (
             <div key={index} className={item.class}>
@@ -18,7 +19,7 @@ const Footer = () => {
               </h5>
               <div>
                 {item.describe ? (
-                  <p className="text-justify">{item.describe}</p>
+                  <p className="text-justify lg:w-2/3">{item.describe}</p>
                 ) : item.links ? (
                   <nav>
                     <ul className="grid gap-y-2">
@@ -63,7 +64,7 @@ const Footer = () => {
           <h6>
             <Link to="/about">Code Empire © 2024</Link>
           </h6>
-          <ul className="mt-3 pb-3  max-md:mx-auto grid grid-cols-4 gap-4">
+          <ul className="mt-3 pb-3 grid grid-cols-4 gap-4">
             {socialButtons.map((item, index) => {
               return (
                 <li key={index}>
