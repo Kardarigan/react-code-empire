@@ -19,7 +19,7 @@
     }
   }
   .bg {
-    @apply bg-gradient-to-bl from-blue-500 to-blue-700;
+    @apply bg-gradient-to-bl from-blue-500 to-blue-700 shadow-lg;
   }
   .button {
     @apply transition duration-200 lg:text-sm text-center font-semibold backdrop-blur-sm text-sm rounded-xl md:w-auto inline-block w-full px-10 py-2;

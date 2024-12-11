@@ -23,7 +23,7 @@ const Breadcrumb = () => {
           return (
             <React.Fragment key={to}>
               <span className="mx-2">
-                <i class="fa-duotone fa-solid fa-sword rotate-[225deg]" />
+                <i className="fa-duotone fa-solid fa-sword rotate-[225deg]" />
               </span>
               {isLast ? (
                 <span className="text-gray-600">

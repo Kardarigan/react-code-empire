@@ -199,31 +199,37 @@ export const contactForm = [
   {
     label: "نام",
     type: "text",
+    name: "sender_name",
     required: true,
     half: true,
   },
   {
     label: "نام خانوادگی (اختیاری)",
     type: "text",
+    name: "sender_lastname",
     half: true,
   },
   {
     label: "شماره تماس (اختیاری)",
     type: "tel",
+    name: "sender_phone",
   },
   {
     label: "ایمیل",
     type: "email",
+    name: "source_email",
     required: true,
   },
   {
     label: "موضوع پیام",
     type: "text",
+    name: "message_subject",
     required: true,
   },
   {
     label: "متن پیام",
     type: "textarea",
+    name: "message_content",
     required: true,
   },
 ];

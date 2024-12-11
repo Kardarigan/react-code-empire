@@ -1,6 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
 import { Course_Card } from "../Portal";
-import { useRef } from "react";
 
 const Courses_Section = ({ course }) => {
   const location = useLocation().pathname;

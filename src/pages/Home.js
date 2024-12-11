@@ -20,7 +20,6 @@ import { courses } from "../data/Courses";
 
 const Home = () => {
   const slicedCourses = courses.slice(-6);
-  console.log(slicedCourses);
 
   return (
     <>

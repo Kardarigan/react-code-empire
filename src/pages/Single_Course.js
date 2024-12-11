@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import {
   Article,
   Breadcrumb,
+  Courses_Section,
   FAQ,
   Hero,
   Main_Side,
@@ -9,12 +10,18 @@ import {
 } from "../comps/Portal";
 import { courses } from "../data/Courses";
 import { useEffect, useState } from "react";
+import { shuffle } from "../comps/Utility/shuffle";
 
 const Single_Course = () => {
   const { course } = useParams();
   const theCourse = courses.find((e) => e && e.path === course);
   const subtitle = theCourse.persianTitle + ", " + theCourse.describe;
   const [showRegisterButton, setShowRegisterButton] = useState(true);
+
+  const similarCourses = shuffle(
+    courses.filter((e) => e.category === theCourse?.category),
+    3
+  );
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,7 +40,7 @@ const Single_Course = () => {
     <>
       <Hero title={theCourse.title} subtitle={subtitle} />
       <Breadcrumb />
-      <section className="grid md:grid-cols-5 gap-8 container padding-x padding-t pb-60 relative">
+      <section className="grid md:grid-cols-5 gap-8 container padding relative">
         <div className="md:col-span-3 max-md:pb-12">
           <Share />
           <div className="grid gap-y-12">
@@ -48,6 +55,11 @@ const Single_Course = () => {
           capacity={theCourse.capacity}
           price={theCourse.price}
           hint="درصورت پرداخت اقساطی 5% و در صورت پرداخت یکجا از 20% تخفیف روی بهای دوره بهره‌مند میشوید!"
+        />
+      </section>
+      <section className="container padding-x pt-12 pb-60">
+        <Courses_Section
+          course={{ title: "دوره های مشابه", courses: similarCourses }}
         />
       </section>
       <button

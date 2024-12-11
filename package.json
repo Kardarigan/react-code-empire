@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@lordicon/react": "^1.10.1",
     "@splidejs/react-splide": "^0.7.12",
     "@testing-library/jest-dom": "^5.17.0",
