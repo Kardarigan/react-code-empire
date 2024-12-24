@@ -1,4 +1,4 @@
-import { customersReviews } from "../../data/Constants";
+import { customerReviews } from "../../data/Constants";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 
@@ -28,7 +28,7 @@ const Customers = () => {
             focus: "center",
           }}
         >
-          {customersReviews.map((item, index) => {
+          {customerReviews.map((item, index) => {
             return (
               <SplideSlide key={index}>
                 <div className="size-full card">

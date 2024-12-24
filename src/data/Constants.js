@@ -128,55 +128,46 @@ export const whatWeAre = {
   cover: Persians_Parade,
 };
 
-export const customersReviews = [
+export const customerReviews = [
   {
-    name: "تندیس فرهنگ",
+    name: "محمد‌امین شربلو",
+    job: "دانشجو",
     review:
-      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها است",
-    job: "بلاگر",
-    avatar: "https://api.dicebear.com/9.x/pixel-art/svg?seed=Christian",
-    lastCooperation: "بهمن 1401",
+      "بنده به عنوان دانشجوی رشته کامپیوتر در یکسری مقالات امپراتوری کد همکاری داشتم و این واقعا برام کاری مهم و جالب بود.",
+    avatar: "https://api.dicebear.com/9.x/rings/svg?seed=Nolan",
+    lastCooperation: "آذر 1403",
   },
   {
-    name: "رُکسانا ابطحی",
+    name: "امیر ارسلان پایدار",
+    job: "گیتاریست",
     review:
-      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها است",
-    job: "آموزگار پیانو",
-    avatar: "https://api.dicebear.com/9.x/pixel-art/svg?seed=Valentina",
-    lastCooperation: "بهمن 1401",
+      "بنده به عنوان یک گیتاریست و آموزگار گیتار از همکاری‌ خودم و تیمم با آکادمی امپراتوری کد برای ساخت موزیک‌های کوتاه اختصاصی خیلی خوشحال شدیم و واقعا تجربه لذت بخشی بود. بنظرم امپراتوری کد تیمی پویا و پرانرژی هست که اهداف و قوانین جالبی برای کارشان و آیندشون دارن.",
+    avatar: "https://api.dicebear.com/9.x/rings/svg?seed=Leah",
+    lastCooperation: "آذر 1403",
   },
   {
-    name: "ساسان داوودی",
+    name: "محمدحسین رئیسی",
+    job: "دانشجو",
     review:
-      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها است",
-    job: "عکاس",
-    avatar: "https://api.dicebear.com/9.x/pixel-art/svg?seed=Nolan",
-    lastCooperation: "بهمن 1401",
+      "من فقط چندتا مشورت و همکاری ساده درباره کارهای دانشگاهم باهاشون داشتم ولی واقعا به اندازه یک پروژه بزرگ برام لذت بخش بود. به امید همکاری‌های بیشتر...",
+    avatar: "https://api.dicebear.com/9.x/rings/svg?seed=Luis",
+    lastCooperation: "آذر 1403",
   },
   {
-    name: "آریانا مطهری",
+    name: "امیرحسین امینی",
+    job: "دانشجو",
     review:
-      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها است",
-    job: "مدیر شعب آنلاین جین وست",
-    avatar: "https://api.dicebear.com/9.x/pixel-art/svg?seed=Aiden",
-    lastCooperation: "بهمن 1401",
+      "من به شخصه کلاس‌ها، مقالات و تم وبسایت امپراتوری کد خیلی برام جالب بود. بنده به عنوان دانشجوی رشته انیمیشن خیلی دوست دارم که که در طراحی کرکتر و هنر بازی‌سازی پیشرفت کنم.",
+    avatar: "https://api.dicebear.com/9.x/rings/svg?seed=Avery",
+    lastCooperation: "آذر 1403",
   },
-  {
-    name: "اردوان برزویی",
-    review:
-      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها است",
-    job: "برنامه نویس وب",
-    avatar: "https://api.dicebear.com/9.x/pixel-art/svg?seed=Alexander",
-    lastCooperation: "بهمن 1401",
-  },
-  {
-    name: "پریسا هرمززاده",
-    review:
-      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها است",
-    job: "کدآموز",
-    avatar: "https://api.dicebear.com/9.x/pixel-art/svg?seed=Sarah",
-    lastCooperation: "بهمن 1401",
-  },
+  // {
+  //   name: "",
+  //   job: "",
+  //   review: "",
+  //   avatar: "",
+  //   lastCooperation: "آذر 1403",
+  // },
 ];
 
 export const homeOverall = {
@@ -422,7 +413,7 @@ export const companies = [
 
 export const teamMembers = [
   {
-    name: "دارا آکدیان",
+    name: "دارا دیگریان",
     role: "هم بنیانگزار و مدیرعامل",
     profile: Team_1,
     bio: "برنامه‌نویس و طراح وبسایت و دانشجوی ارشد مدیریت کسب و کار. بنده به عنوان هم‌بنیانگذار این امپراتوری و یکی از اعضای تیم آموزشی آکادمی امپراتوری کد بسیار خوشنودم که به شما بزرگواران خدمت میکنم.",
