@@ -2,7 +2,7 @@ import instagram_logo from "../../assets/instagram-logo.png";
 
 const Instagram = () => {
   return (
-    <section className="container padding">
+    <section className="container padding-x padding-b">
       <a
         href="https://www.instagram.com/"
         className="flex-seperate max-lg:flex-col-reverse padding-x rounded-lg"

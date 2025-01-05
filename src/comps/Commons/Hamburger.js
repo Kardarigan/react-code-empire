@@ -18,7 +18,7 @@ const Hamburger = ({ setHamburger }) => {
             className="button button-light"
             onClick={closeHamburger}
           >
-            رزرو دوره
+            رزرو کلاس
           </NavLink>
         </li>
         {hamburgerLinks.map((item, index) => {

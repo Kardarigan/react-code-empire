@@ -14,7 +14,7 @@ const Rules_Overview = () => {
           <span className="mac-bg">قوانین ویژه</span>
         </h3>
         <div className="mt-12">
-          <Rules_Scroll title="دوره های آموزشی" rules={policy} />;
+          <Rules_Scroll title="کلاس های آموزشی" rules={policy} />;
         </div>
       </section>
     </>

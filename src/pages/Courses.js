@@ -14,7 +14,7 @@ import { coursesQuestions } from "../data/Courses";
 const Courses = () => {
   return (
     <>
-      <Hero title="دوره های امپراتوری" background={Cover} />
+      <Hero title="کلاس های امپراتوری" background={Cover} />
       <Breadcrumb />
       <All_Courses />
       <Learners_Rank />

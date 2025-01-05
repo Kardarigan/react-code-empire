@@ -6,7 +6,7 @@ const Courses_Section = ({ course }) => {
   const isCoursePage = location.endsWith("/courses");
 
   return (
-    <div className="mt-24">
+    <div className="md:mt-24 mt-12">
       <div className="flex-seperate">
         <h2 className="title">
           <i className="fa-solid fa-hashtag" />
@@ -17,7 +17,7 @@ const Courses_Section = ({ course }) => {
             to="/courses"
             className="title-sm flex items-center gap-x-3 hover:opacity-70 transition-all"
           >
-            مشاهده همه دوره‌ها{" "}
+            مشاهده همه کلاس‌ها{" "}
             <i className="fa-duotone fa-solid fa-sword rotate-[225deg]" />
           </Link>
         )}

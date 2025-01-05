@@ -7,7 +7,7 @@ const Half = ({ thing, reverse = false }) => {
   return (
     <section
       ref={ref}
-      className={`padding-x py-10 flex  flex-col-reverse ${
+      className={`container padding-x py-10 flex flex-col-reverse ${
         reverse ? "md:flex-row-reverse" : "md:flex-row"
       }`}
     >
@@ -24,7 +24,7 @@ const Half = ({ thing, reverse = false }) => {
           </h3>
           <p className="my-5 para max-w-[500px]">{thing.describe}</p>
           <Link to="/contact" className="button button-dark">
-            مشاهده‌ی دوره ها
+            مشاهده‌ی کلاس ها
           </Link>
         </div>
       </div>

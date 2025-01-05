@@ -5,7 +5,7 @@ import Footer_Journal from "./Footer_Journal";
 const Footer = () => {
   return (
     <footer
-      className="w-full bg-slate-900 text-slate-100 text-xs text-center z-20 lg:mt-72 mt-60 padding-x max-lg:pt-24"
+      className="w-full bg-slate-900 text-slate-100 text-xs text-center z-20 lg:mt-72 mt-52 padding-x max-lg:pt-24"
       dir="rtl"
     >
       <Footer_Journal />

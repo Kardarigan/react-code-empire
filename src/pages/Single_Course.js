@@ -54,22 +54,22 @@ const Single_Course = () => {
           link={{ label: "ثبت نام", path: theCourse.registerLink }}
           capacity={theCourse.capacity}
           price={theCourse.price}
-          hint="درصورت پرداخت اقساطی 5% و در صورت پرداخت یکجا از 20% تخفیف روی بهای دوره بهره‌مند میشوید!"
+          hint="درصورت پرداخت اقساطی 5% و در صورت پرداخت یکجا از 20% تخفیف روی بهای کلاس بهره‌مند میشوید!"
         />
       </section>
       <section className="container padding-x pt-12 pb-60">
         <Courses_Section
-          course={{ title: "دوره های مشابه", courses: similarCourses }}
+          course={{ title: "کلاس های مشابه", courses: similarCourses }}
         />
       </section>
-      <button
-        className={`md:hidden fixed bottom-16 z-20 left-10 button-dark rounded title-sm w-52 h-12 displayTrans ${
+      <a
+        className={`md:hidden fixed bottom-16 z-20 left-10 button button-dark rounded title-sm w-52 h-12 displayTrans ${
           showRegisterButton ? "visible opacity-100" : "invisible opacity-0"
         }`}
-        onClick={() => window.scrollTo(0, 0)}
+        href="#sidebar"
       >
         ثبت نام
-      </button>
+      </a>
     </>
   );
 };

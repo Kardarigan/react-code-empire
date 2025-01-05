@@ -35,7 +35,7 @@ const Home_Hero = () => {
           </p>
           <div className="flex justify-center mt-10">
             <Link to="/courses" className="button button-light">
-              شرکت در دوره های امپراتوری
+              شرکت در کلاس های امپراتوری
             </Link>
           </div>
         </div>

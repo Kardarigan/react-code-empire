@@ -11,29 +11,29 @@ import Home_Ways from "../assets/pages/home-ways.png";
 export const navLinks = [
   { href: "/", label: "خانه" },
   {
-    href: "/courses",
-    label: "دوره ها",
-  },
-  { href: "/blog", label: "مقالات" },
-  { href: "/contact", label: "ارتباط باما" },
-  {
     href: "/about",
     label: "درباره",
   },
+  {
+    href: "/courses",
+    label: "کلاس ها",
+  },
+  { href: "/blog", label: "مقالات" },
+  { href: "/contact", label: "ارتباط باما" },
 ];
 
 export const hamburgerLinks = [
   { href: "/", label: "خانه" },
   {
-    href: "/courses",
-    label: "دوره ها",
-  },
-  { href: "/blog", label: "مقالات" },
-  { href: "/contact", label: "ارتباط باما" },
-  {
     href: "/about",
     label: "درباره",
   },
+  {
+    href: "/courses",
+    label: "کلاس ها",
+  },
+  { href: "/blog", label: "مقالات" },
+  { href: "/contact", label: "ارتباط باما" },
   { href: "/policy", label: "قوانین" },
 ];
 
@@ -53,7 +53,7 @@ export const footLinks = [
         path: "/",
       },
       {
-        label: "دوره های آموزشی",
+        label: "کلاس های آموزشی",
         path: "/courses",
       },
       {
@@ -208,7 +208,7 @@ export const contactForm = [
   {
     label: "ایمیل",
     type: "email",
-    name: "source_email",
+    name: "sender_email",
     required: true,
   },
   {
@@ -247,7 +247,7 @@ export const about = {
   idea: {
     title: "ایده اصلی ما چیه؟",
     describe:
-      "همیشه بهترین گروه یا فرد کسیه که در کمترین زمان درست‌ترین و بهینه ترین کار رو انجام بده. همیشه بهترین جامعه یا کشور، اونیه که بروز باشه و درست تلاش کنه. همیشه بهترین دوره از زندگی، زمانیه که زندگیت مملو از برنامه ریزی و انگیزه و هدف و دسترسی به دانش‌های نوین و کارآمد باشه. ایده اصلی ما اجرای همه این موارد به صورت حرفه‌ای و ساده برای همه شماست!",
+      "همیشه بهترین گروه یا فرد کسیه که در کمترین زمان درست‌ترین و بهینه ترین کار رو انجام بده. همیشه بهترین جامعه یا کشور، اونیه که بروز باشه و درست تلاش کنه. همیشه بهترین کلاس از زندگی، زمانیه که زندگیت مملو از برنامه ریزی و انگیزه و هدف و دسترسی به دانش‌های نوین و کارآمد باشه. ایده اصلی ما اجرای همه این موارد به صورت حرفه‌ای و ساده برای همه شماست!",
     cover: Persian_Coder_3,
   },
   overall: {
@@ -327,7 +327,7 @@ export const registerForm = [
     required: true,
   },
   {
-    label: "دوره ی دلخواه",
+    label: "کلاس ی دلخواه",
     type: "select",
     options: [
       "HTML,CSS",
@@ -350,7 +350,7 @@ export const registerForm = [
 export const coursesOverall = {
   title: "با دقت انتخاب کن دوست من!",
   describe:
-    "میتونی با کارشناسای ما تماس بگیری بهت راهنمایی کنیم بهترین دوره رو برگزینی.",
+    "میتونی با کارشناسای ما تماس بگیری بهت راهنمایی کنیم بهترین کلاس رو برگزینی.",
   links: [
     {
       link: "mailto:duckdukstay@hotmail.com",
@@ -439,11 +439,11 @@ export const policyOverall = {
   links: [
     {
       link: "/courses",
-      label: "شرکت در دوره",
+      label: "شرکت در کلاس",
     },
     {
       link: "/contact/register-form",
-      label: "رزور دوره",
+      label: "رزور کلاس",
     },
   ],
 };

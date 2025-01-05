@@ -7,6 +7,15 @@ const Breadcrumb = () => {
   function capitalizeFirstLetter(val) {
     return String(val).charAt(0).toUpperCase() + String(val).slice(1);
   }
+  const dictionary = {
+    home: "خانه",
+    about: "درباره ما",
+    courses: "کلاس ها",
+    blog: "مقالات",
+    contact: "ارتباط با ما",
+    policy: "منشور قوانین",
+  };
+
   return (
     <nav className="text-gray-400 bg-slate-50 px-5 py-2">
       <div
@@ -14,12 +23,16 @@ const Breadcrumb = () => {
         title="شما اینجا هستید."
       >
         <Link to="/" className="hover:underline  hover:text-slate-700 me-2">
-          Home
+          خانه
         </Link>
 
         {pathnames.map((segment, index) => {
           const to = `/${pathnames.slice(0, index + 1).join("/")}`;
           const isLast = index === pathnames.length - 1;
+          if (segment in dictionary) {
+            segment = dictionary[segment];
+          }
+
           return (
             <React.Fragment key={to}>
               <span className="mx-2">

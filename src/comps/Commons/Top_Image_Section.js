@@ -4,7 +4,7 @@ const Top_Image_Section = ({ title = null, label = null, describe, cover }) => {
   const { ref, className } = Loaded_Animation();
 
   return (
-    <section className="padding grid gap-y-5">
+    <section className="padding container grid gap-y-5">
       <div>
         <img
           ref={ref}

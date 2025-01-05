@@ -6,7 +6,7 @@ const Course_Form = () => {
     <>
       <Hero
         title="انگار میخوای یادگیری رو آغاز کنی"
-        subtitle="فرم زیر رو پر کن و دوره ای که میخوای رو برگزین"
+        subtitle="فرم زیر رو پر کن و کلاس ای که میخوای رو برگزین"
       />
       <section className="container-sm mt-12 pb-40 padding-x">
         <Form fields={registerForm} />

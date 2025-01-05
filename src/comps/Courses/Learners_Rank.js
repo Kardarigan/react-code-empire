@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { learnersRank } from "../../data/Ranking";
 
 const Learners_Rank = () => {
-  const tableHeading = ["جایگاه", "پروفایل", "نام", "وضعیت", "رتبه", "دوره"];
+  const tableHeading = ["جایگاه", "پروفایل", "نام", "وضعیت", "رتبه", "کلاس"];
   return (
     <section className="container text-center px-5 padding-y mt-24">
       <h3 className="title-lg">

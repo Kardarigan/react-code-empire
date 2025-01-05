@@ -50,11 +50,25 @@ const Navbar = () => {
           hamburger ? " opacity-100" : ""
         }`}
       >
-        <div className="mx-auto max-w-[1200px] flex-seperate max-md:px-5 text-slate-100 py-3">
+        <div
+          className="mx-auto max-w-[1200px] flex-seperate max-md:px-5 text-slate-100 py-3"
+          dir="rtl"
+        >
+          <button
+            className={`md:hidden flex-fullcenter text-xl rounded size-10 ${
+              hamburger ? "bg-slate-700 text-slate-50" : "bg-slate-800"
+            }`}
+            onClick={() => setHamburger(!hamburger)}
+          >
+            <i
+              className={`fas fa-sharp fa-bars transition-all ${
+                hamburger ? "rotate-90" : ""
+              }`}
+            />
+          </button>
           <Link to="/">
-            <h2 className="text-2xl mix-blend-difference">
-              <span className="">امپراتوری</span>{" "}
-              <span className="text-blue-400">کد</span>
+            <h2 className="text-2xl">
+              <span>امپراتوری</span> <span className="text-blue-400">کد</span>
             </h2>
           </Link>
           <nav className="flex flex-row items-center gap-4 ms-6 font-bold max-md:hidden">
@@ -70,26 +84,14 @@ const Navbar = () => {
             to="/courses/register-form"
             className="button button-outline-light max-md:hidden"
           >
-            رزرو دوره
+            رزرو کلاس
           </Link>
-          <button
-            className={`md:hidden flex-fullcenter text-xl rounded size-10 ${
-              hamburger ? "bg-slate-700 text-slate-50" : "bg-slate-800"
-            }`}
-            onClick={() => setHamburger(!hamburger)}
-          >
-            <i
-              className={`fas fa-sharp fa-bars transition-all ${
-                hamburger ? "rotate-90" : ""
-              }`}
-            />
-          </button>
         </div>
       </header>
       <section
         className={`displayTrans fixed ${
           hamburger ? "visible opacity-100" : "invisible opacity-0"
-        } w-screen h-[calc(100%-60px)] top-[60px] left-0 right-0 z-50 bg-slate-900`}
+        } w-screen h-[calc(100%-64px)] top-[64px] left-0 right-0 z-50 bg-slate-900`}
       >
         <Hamburger setHamburger={setHamburger} />
       </section>

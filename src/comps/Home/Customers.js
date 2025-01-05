@@ -5,11 +5,11 @@ import "@splidejs/react-splide/css";
 const Customers = () => {
   return (
     <section className="padding-x py-10">
-      <h2 className="title">
+      <h2 className="title-lg">
         <i className="fa-solid fa-hashtag" />
-        <span className="halfbg-left"> چیز که دیگران دربارمون میگن</span>
+        <span className="halfbg-left"> چیزی که دیگران دربارمون میگن</span>
       </h2>
-      <div dir="ltr" className="mt-24">
+      <div dir="ltr" className="mt-10">
         <Splide
           aria-label="Tesla Hero Slider"
           options={{
@@ -37,16 +37,18 @@ const Customers = () => {
                     alt={item.name}
                     className="w-24 h-24 me-8"
                   />
-                  <div dir="rtl" className="text-start">
-                    <h3>
-                      {item.name}
-                      <span className="mx-2 font-thin">/</span>
-                      <span className="text-slate-300 text-[10px]">
-                        {item.job}
-                      </span>
-                    </h3>
-                    <hr className="my-2 opacity-30" />
-                    <p className="text-xs text-justify mt-3">{item.review}</p>
+                  <div className="flex flex-col justify-between">
+                    <div className="text-start">
+                      <h3>
+                        {item.name}
+                        <span className="mx-2 font-thin">/</span>
+                        <span className="text-slate-300 text-[10px]">
+                          {item.job}
+                        </span>
+                      </h3>
+                      <hr className="my-2 opacity-30" />
+                      <p className="text-xs text-justify mt-3">{item.review}</p>
+                    </div>
                     <p className="text-slate-200 md:text-[10px] text-[8px] text-end mt-2">
                       آخرین همکاری : {item.lastCooperation}
                     </p>

@@ -10,12 +10,7 @@ import {
   Courses_Section,
   Magazin,
 } from "../comps/Portal";
-import {
-  homeOverall,
-  futureAcademy,
-  newWays,
-  whatWeAre,
-} from "../data/Constants";
+import { futureAcademy, newWays, whatWeAre } from "../data/Constants";
 import { courses } from "../data/Courses";
 
 const Home = () => {
@@ -26,9 +21,9 @@ const Home = () => {
       <Home_Hero />
       <Breadcrumb />
       <Half thing={futureAcademy} />
-      <section className="container padding-t padding-x">
+      <section className="container padding-x">
         <Courses_Section
-          course={{ title: "آخرین دوره ها", courses: slicedCourses }}
+          course={{ title: "آخرین کلاس ها", courses: slicedCourses }}
         />
       </section>
       <Popular_Courses />

@@ -12,15 +12,15 @@ const All_Courses = () => {
 
   const theAllCourses = [
     {
-      title: "دوره های طراحی وبسایت",
+      title: "کلاس های طراحی وبسایت",
       courses: courseWeb,
     },
     {
-      title: "دوره های برنامه نویسی",
+      title: "کلاس های برنامه نویسی",
       courses: courseSoftware,
     },
     {
-      title: "دوره های بازی سازی",
+      title: "کلاس های بازی سازی",
       courses: courseGame,
     },
   ];
@@ -29,7 +29,7 @@ const All_Courses = () => {
     <section className="container padding-t padding-x">
       <Tip
         message={
-          "تمام دوره ها (همچنین در طول دوره) با آخرین نسخه های هر تکنولوژی بروزرسانی میشوند"
+          "تمام کلاس ها (همچنین در طول کلاس) با آخرین نسخه های هر تکنولوژی بروزرسانی میشوند"
         }
         blue
       />

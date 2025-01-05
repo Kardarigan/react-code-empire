@@ -22,7 +22,11 @@ const Contact = () => {
         <h3 className="title text-center mb-5">
           <span className="mac-bg">فرم تماس با امپراتوری</span>
         </h3>
-        <Form fields={contactForm} />
+        <Form
+          fields={contactForm}
+          service="service_auob6ff"
+          template="template_empire_contact"
+        />
         <Tip
           className="mt-12"
           message='<a href="mailto:duckduckstay@hotmail.com">اگه ازین فرما خوشت نمیاد یه ایمیل ساده میتونی بفرستی</a>.'

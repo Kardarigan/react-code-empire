@@ -15,8 +15,8 @@ const Main_Side = ({
   capacity = Number(capacity);
 
   return (
-    <aside className="md:col-span-2">
-      <div className="flex flex-col gap-y-3 sticky top-20">
+    <aside className="md:col-span-2" id="sidebar">
+      <div className="flex flex-col justify-end gap-y-3 max-md:h-[115%] sticky top-20">
         {(capacity || capacity === 0) && (
           <section
             className={`py-3 mac-border text-slate-50 flex-seperate ${
@@ -27,7 +27,7 @@ const Main_Side = ({
                 : "text-slate-50 bg"
             }`}
           >
-            <h5>ظرفیت دوره :</h5>
+            <h5>ظرفیت کلاس :</h5>
             <h5>{capacity > 0 ? `${capacity} نفر` : "ظرفیت پر شد"}</h5>
           </section>
         )}
@@ -44,13 +44,13 @@ const Main_Side = ({
         </section>
         <section className="warn pt-2 pb-5">
           <h4 className="title">
-            <i className="fa-solid fa-hashtag"></i>مشخصات
+            <i className="fa-solid fa-hashtag text-slate-100"></i>مشخصات
           </h4>
           <ul className="grid gap-y-3 mt-5">
             {details.map((item, index) => {
               return (
                 <li
-                  className="flex-seperate rounded-full bg-blue-500 px-5"
+                  className="flex-seperate rounded-full bg-blue-500 px-5 py-1 para"
                   key={index}
                 >
                   <h5 className="font-bold">{item.label} :</h5>
@@ -62,14 +62,14 @@ const Main_Side = ({
         </section>
         {price && (
           <section className="py-3 warn flex-seperate">
-            <h5 className="text-slate-200">بهای دوره :</h5>
+            <h5 className="text-slate-200">بهای کلاس :</h5>
             <h5>{formattedPrice} تومان</h5>
           </section>
         )}
         <Link
           className="py-3 button button-outline-dark rounded-3xl"
           to={capacity !== 0 && link.path}
-          onClick={() => alert("این دوره پر شده است!")}
+          onClick={() => alert("این کلاس پر شده است!")}
         >
           {link.label}
         </Link>
