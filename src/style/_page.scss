@@ -80,7 +80,7 @@
     content: "";
     @extend .snipCorner;
     @extend .snipCorner-bot;
-    @apply block w-full absolute bottom-0 transition-all;
+    @apply w-[90%] translate-x-[-5%] block absolute bottom-0 transition-all;
   }
   &-column {
     @apply thatch absolute w-[80%] translate-x-[-12.5%] h-3/5;
@@ -94,7 +94,7 @@
     }
   }
   &-found {
-    @apply thatch md:w-[110%] w-[100%] md:translate-x-[5%] md:rounded-t-lg h-10 relative;
+    @apply thatch md:w-[100%] w-[100%] md:rounded-t-lg h-10 relative;
     &::after,
     &::before {
       content: "";
