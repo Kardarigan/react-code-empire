@@ -51,7 +51,7 @@ const Form = ({ fields, submit = "ارسال", service, template }) => {
                       name={item.name}
                     ></textarea>
                   ) : item.type === "select" ? (
-                    <select className="field">
+                    <select className="field" name={item.name}>
                       {item.options.map((option, index) => {
                         return <option key={index}>{option}</option>;
                       })}

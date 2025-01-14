@@ -9,7 +9,11 @@ const Course_Form = () => {
         subtitle="فرم زیر رو پر کن و کلاس ای که میخوای رو برگزین"
       />
       <section className="container-sm mt-12 pb-40 padding-x">
-        <Form fields={registerForm} />
+        <Form
+          fields={registerForm}
+          service="service_6smeggr"
+          template="template_h64zus6"
+        />
       </section>
     </>
   );

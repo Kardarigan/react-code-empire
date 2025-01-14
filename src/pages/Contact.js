@@ -24,7 +24,7 @@ const Contact = () => {
         </h3>
         <Form
           fields={contactForm}
-          service="service_auob6ff"
+          service="service_6smeggr"
           template="template_empire_contact"
         />
         <Tip

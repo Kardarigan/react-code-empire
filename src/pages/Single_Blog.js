@@ -7,7 +7,6 @@ import {
   Hero,
   Overall,
 } from "../comps/Portal";
-import { singleBlogOverall } from "../data/Constants";
 
 const Single_Blog = () => {
   const { blog } = useParams();

@@ -292,43 +292,35 @@ export const blogOverall = {
   ],
 };
 
-export const singleBlogOverall = {
-  title: "زمانتو صرف چیزه خوبی کردی!",
-  describe:
-    "مطلب خیلی کاربردیه ولی برای اینکه واقعا کارا باشه باید به کار بگیریش",
-  links: [],
-};
-
 export const registerForm = [
   {
     label: "نام",
     type: "text",
+    name: "sender_name",
     required: true,
     half: true,
   },
   {
     label: "نام خانوادگی (اختیاری)",
     type: "text",
+    name: "sender_lastname",
     half: true,
-  },
-  {
-    label: "جنسیت",
-    type: "select",
-    options: ["زن/دختر", "مرد/پسر"],
-    required: true,
   },
   {
     label: "شماره تماس",
     type: "tel",
+    name: "sender_phone",
   },
   {
     label: "ایمیل",
     type: "email",
+    type: "sender_email",
     required: true,
   },
   {
     label: "کلاس ی دلخواه",
     type: "select",
+    name: "selected_course",
     options: [
       "HTML,CSS",
       "JavaScript",
