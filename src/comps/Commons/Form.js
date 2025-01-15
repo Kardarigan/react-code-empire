@@ -1,10 +1,24 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { handleHashChange } from "../Utility/Hash_Change";
 
-const Form = ({ fields, submit = "ارسال", service, template }) => {
+const Form = ({
+  fields,
+  submit = "ارسال",
+  service,
+  template,
+  selectedOption,
+  setSelectedOption,
+}) => {
   const form = useRef();
   const [message, setMessage] = useState(null);
   const [showMessage, setShowMessage] = useState(false);
+
+  const handleFieldChange = (e) => {
+    const selectedOption = e.target.value;
+    setSelectedOption(selectedOption);
+    window.location.hash = encodeURIComponent(selectedOption); // Keep hash synchronized
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -22,7 +36,7 @@ const Form = ({ fields, submit = "ارسال", service, template }) => {
             window.scrollTo(0, 0);
           }, 2000);
         },
-        (error) => {
+        () => {
           setShowMessage(true);
           setMessage("مشکلی پیش آمده!؟");
           setTimeout(() => {
@@ -47,14 +61,22 @@ const Form = ({ fields, submit = "ارسال", service, template }) => {
                   {item.type === "textarea" ? (
                     <textarea
                       className="field min-h-[120px]"
-                      required={item.required ? true : false}
+                      required={item.required}
                       name={item.name}
                     ></textarea>
                   ) : item.type === "select" ? (
-                    <select className="field" name={item.name}>
-                      {item.options.map((option, index) => {
-                        return <option key={index}>{option}</option>;
-                      })}
+                    <select
+                      className="field"
+                      name={item.name}
+                      onChange={handleFieldChange}
+                      value={selectedOption || ""}
+                    >
+                      <option value="" disabled>
+                        انتخاب گزینه
+                      </option>
+                      {item.options.map((option, index) => (
+                        <option key={index}>{option}</option>
+                      ))}
                     </select>
                   ) : (
                     <input
@@ -62,7 +84,7 @@ const Form = ({ fields, submit = "ارسال", service, template }) => {
                       type={item.type}
                       name={item.name}
                       className="field"
-                      required={item.required ? true : false}
+                      required={item.required}
                     />
                   )}
                 </div>

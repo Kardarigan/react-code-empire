@@ -10,7 +10,6 @@ import Home from "../pages/Home";
 import Layout from "./Layout";
 import Home_Hero from "./Home/Home_Hero";
 import Customers from "./Home/Customers";
-import Overall from "./Commons/Overall";
 import Navbar from "./Commons/Navbar";
 import Footer from "./Commons/Footer";
 import Half from "./Commons/Half";
@@ -104,7 +103,6 @@ export {
   About,
   Blog,
   Contact,
-  Overall,
   Navbar,
   Footer,
   Home,

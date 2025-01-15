@@ -4,7 +4,7 @@ import { companies } from "../../data/Constants";
 
 const Companies = () => {
   return (
-    <section className="padding-y">
+    <section className="container padding-y">
       <h3 className="title text-center mb-10">
         <span className="halfbg-left">
           دانش آموختگان ما در این شرکت ها مشغول به کارند

@@ -5,10 +5,8 @@ import {
   FAQ,
   Hero,
   Learners_Rank,
-  Overall,
 } from "../comps/Portal";
 import Cover from "../assets/courses.png";
-import { coursesOverall } from "../data/Constants";
 import { coursesQuestions } from "../data/Courses";
 
 const Courses = () => {

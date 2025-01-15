@@ -1,6 +1,5 @@
 $color_prime: rgb(37 99 235);
-$color_second: #d17cd9;
-$color_dark: #171a20;
+$color_dark: #121b33;
 $color_light: #f3f4f4;
 
 * {
@@ -14,6 +13,28 @@ $color_light: #f3f4f4;
 @font-face {
   font-family: Yekan;
   src: url(../assets/Yekan_Regular.ttf);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $color_dark;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $color_prime;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba($color_prime, 0.8);
+}
+
+::selection {
+  color: $color_light;
+  background-color: rgba(#2445a5, 0.8);
 }
 
 body {

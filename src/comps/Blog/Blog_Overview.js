@@ -1,7 +1,9 @@
-import { useEffect, useState, useMemo } from "react";
+// Blog_Overview.js
+import React, { useEffect, useState, useMemo, useCallback } from "react";
 import { categories, sortby } from "../../data/Constants";
 import { blogs } from "../../data/Blogs";
 import { Blog_Card } from "../Portal";
+import { handleHashChange } from "../Utility/Hash_Change";
 
 const Blog_Overview = () => {
   const [category, setCategory] = useState("");
@@ -11,24 +13,13 @@ const Blog_Overview = () => {
   const blogsPerPage = 9;
 
   useEffect(() => {
-    const handleHashChange = () => {
-      const hashCategory =
-        decodeURIComponent(window.location.hash.slice(1)) || "";
-
-      if (categories.includes(hashCategory)) {
-        setCategory(hashCategory);
-      } else if (window.location.pathname.endsWith("/blog")) {
-        setCategory("همه");
-      } else {
-        setCategory("");
-      }
-    };
-
-    handleHashChange();
-    window.addEventListener("hashchange", handleHashChange);
+    const onHashChange = () =>
+      handleHashChange(window.location.hash, setCategory, categories);
+    onHashChange();
+    window.addEventListener("hashchange", onHashChange);
 
     return () => {
-      window.removeEventListener("hashchange", handleHashChange);
+      window.removeEventListener("hashchange", onHashChange);
     };
   }, []);
 
@@ -40,11 +31,11 @@ const Blog_Overview = () => {
     }
   }, [category]);
 
-  const handleCategoryChange = (e) => {
+  const handleCategoryChange = useCallback((e) => {
     const selectedCategory = e.target.value;
     setCategory(selectedCategory);
     setPage(1);
-  };
+  }, []);
 
   const filteredBlogs = useMemo(() => {
     let sortedBlogs = [...blogs];
@@ -78,22 +69,22 @@ const Blog_Overview = () => {
     return filteredBlogs.slice(startIndex, startIndex + blogsPerPage);
   }, [filteredBlogs, page]);
 
-  const handlePageChanging = (e) => {
+  const handlePageChanging = useCallback((e) => {
     const pageNumber = parseInt(e.target.value);
     setPage(pageNumber);
-  };
+  }, []);
 
-  const handleNextPage = () => {
+  const handleNextPage = useCallback(() => {
     if (!isLastPage) {
       setPage(page + 1);
     }
-  };
+  }, [isLastPage, page]);
 
-  const handlePrevPage = () => {
+  const handlePrevPage = useCallback(() => {
     if (!isFirstPage) {
       setPage(page - 1);
     }
-  };
+  }, [isFirstPage, page]);
 
   useEffect(() => {
     const selectBox = document.getElementById("pageSelect");
@@ -141,9 +132,8 @@ const Blog_Overview = () => {
         </div>
         <div className="flex-seperate items-center max-md:min-w-full gap-1 text-slate-400 font-thin select-none mac-border py-2">
           {sortby.map((item, index) => (
-            <>
+            <React.Fragment key={index}>
               <span
-                key={index}
                 className={`cursor-pointer ${
                   index === sort && "text-blue-600"
                 }`}
@@ -154,7 +144,7 @@ const Blog_Overview = () => {
               {index + 1 < sortby.length && (
                 <span className="opacity-50">|</span>
               )}
-            </>
+            </React.Fragment>
           ))}
         </div>
       </div>

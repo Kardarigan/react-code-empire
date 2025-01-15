@@ -1,12 +1,6 @@
 import { useParams } from "react-router-dom";
 import { blogs } from "../data/Blogs";
-import {
-  Blog_Main,
-  Blog_Side,
-  Breadcrumb,
-  Hero,
-  Overall,
-} from "../comps/Portal";
+import { Blog_Main, Blog_Side, Breadcrumb, Hero } from "../comps/Portal";
 
 const Single_Blog = () => {
   const { blog } = useParams();

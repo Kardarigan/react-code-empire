@@ -2,7 +2,6 @@ import {
   Home_Hero,
   Half,
   Customers,
-  Overall,
   Popular_Courses,
   Instagram,
   Course_Benefits,

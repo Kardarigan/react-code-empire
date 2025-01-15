@@ -3,12 +3,10 @@ import {
   Hero,
   Top_Image_Section,
   About_Numbers,
-  Overall,
   Companies,
   About_Team,
   Breadcrumb,
 } from "../comps/Portal";
-import Cover_1 from "../assets/painting_of_an_ancient_Persian_with_sassanid_helmet_thousanse_soldiers_while_their_coding_in_their_laptop_png(1).png";
 import Cover_2 from "../assets/painting_of_an_ancient_Persian_with_sassanid_helmet_thousans_soldiers_while_their_coding_in_their_laptop_in_front_of_the_perspolise_png.png";
 import { about } from "../data/Constants";
 

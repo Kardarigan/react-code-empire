@@ -1,9 +1,8 @@
-import { Link } from "react-router-dom";
-
 const Main_Side = ({
   details,
   specs,
   link,
+  title,
   price = false,
   capacity = false,
   hint = false,
@@ -13,6 +12,13 @@ const Main_Side = ({
     : null;
 
   capacity = Number(capacity);
+  const handleClick = () => {
+    if (capacity > 0) {
+      window.location.href = link.path + "#" + title;
+    } else {
+      alert("ظرفیت این کلاس فعلا پر شده! ولی نوبت تو هم میرسه😉");
+    }
+  };
 
   return (
     <aside className="md:col-span-2" id="sidebar">
@@ -66,13 +72,12 @@ const Main_Side = ({
             <h5>{formattedPrice} تومان</h5>
           </section>
         )}
-        <Link
+        <button
           className="py-3 button button-outline-dark rounded-3xl"
-          to={capacity !== 0 && link.path}
-          onClick={() => alert("این کلاس پر شده است!")}
+          onClick={handleClick}
         >
           {link.label}
-        </Link>
+        </button>
         {hint && (
           <div className="flex items-center">
             <i className="fas fa-checkfa-duotone fa-regular fa-badge-percent me-1"></i>{" "}

@@ -1,6 +1,5 @@
 import Rules_Overview from "../comps/Company/Rules_Overview";
-import { Breadcrumb, Hero, Overall } from "../comps/Portal";
-import { policyOverall } from "../data/Constants";
+import { Breadcrumb, Hero } from "../comps/Portal";
 
 const Rules = () => {
   return (

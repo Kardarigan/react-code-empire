@@ -57,7 +57,7 @@ const Course_Card = ({ thing }) => {
               </span>
             ) : (
               <span className="text-red-600 flex">
-                <i className="fas fa-xmark size-6 flex-fullcenter me-1 bg-blue-200 rounded-full"></i>{" "}
+                <i className="fas fa-xmark size-6 flex-fullcenter me-1 bg-red-100 rounded-full"></i>{" "}
                 تکمیل ظرفیت
               </span>
             )}

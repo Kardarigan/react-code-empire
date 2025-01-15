@@ -46,7 +46,6 @@ export const courses = [
   {
     title: "HTML,CSS",
     persianTitle: "اچ‌تی‌ام‌ال و سی‌اس‌اس",
-    fullTitle: "",
     fullTitle: "آموزش طراحی وبسایت با HTML,CSS",
     path: "html-css",
     category: "web",
@@ -56,7 +55,7 @@ export const courses = [
     color: ["#2965f1", "#f06529"],
     registerLink: "/courses/register-form",
     rank: 2,
-    capacity: "29",
+    capacity: "20",
     specs: [
       {
         icon: "fa-duotone fa-light fa-graduation-cap",

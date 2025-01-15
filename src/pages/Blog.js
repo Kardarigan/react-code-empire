@@ -1,5 +1,4 @@
-import { blogOverall } from "../data/Constants";
-import { Blog_Overview, Breadcrumb, Hero, Overall } from "../comps/Portal";
+import { Blog_Overview, Breadcrumb, Hero } from "../comps/Portal";
 
 const Blog = () => {
   return (

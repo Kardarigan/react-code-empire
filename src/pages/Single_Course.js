@@ -52,6 +52,7 @@ const Single_Course = () => {
           details={theCourse.details}
           specs={theCourse.specs}
           link={{ label: "ثبت نام", path: theCourse.registerLink }}
+          title={theCourse.title}
           capacity={theCourse.capacity}
           price={theCourse.price}
           hint="درصورت پرداخت اقساطی 5% و در صورت پرداخت یکجا از 20% تخفیف روی بهای کلاس بهره‌مند میشوید!"

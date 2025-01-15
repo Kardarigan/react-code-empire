@@ -170,22 +170,6 @@ export const customerReviews = [
   // },
 ];
 
-export const homeOverall = {
-  title: "ما کنارتیم تا به رویات برسی",
-  describe:
-    "همین الان میتونی فرم تماس با ما رو پر کنی تا در نخستین زمان ممکن باهات تماس بگیریم و ماجراجویی رو شروع کنیم!",
-  links: [
-    {
-      link: "mailto:duckdukstay@hotmail.com",
-      label: "ارسال ایمیل",
-    },
-    {
-      link: "/contact",
-      label: "فرم تماس",
-    },
-  ],
-};
-
 export const contactForm = [
   {
     label: "نام",
@@ -239,31 +223,16 @@ export const about = {
     cover: Persian_Coder_2,
   },
   numbers: [
-    { number: 30, title: "پروژه موفق" },
-    { number: 50, title: "دانش آموز" },
-    { number: 120, title: "ساعت مشاوره" },
-    { number: 80, title: "ساعت آموزش رایگان" },
+    { number: 30, title: "مربی مجرب" },
+    { number: 500, title: "دانش آموخته" },
+    { number: 20000, title: "ساعت آموزش" },
+    { number: 300, title: "ساعت مشاوره" },
   ],
   idea: {
     title: "ایده اصلی ما چیه؟",
     describe:
       "همیشه بهترین گروه یا فرد کسیه که در کمترین زمان درست‌ترین و بهینه ترین کار رو انجام بده. همیشه بهترین جامعه یا کشور، اونیه که بروز باشه و درست تلاش کنه. همیشه بهترین کلاس از زندگی، زمانیه که زندگیت مملو از برنامه ریزی و انگیزه و هدف و دسترسی به دانش‌های نوین و کارآمد باشه. ایده اصلی ما اجرای همه این موارد به صورت حرفه‌ای و ساده برای همه شماست!",
     cover: Persian_Coder_3,
-  },
-  overall: {
-    title: "این امپراتوری ماست. امپراتوری کدها و کدزدن ها",
-    describe:
-      "همین الان میتونی فرم تماس با ما رو پر کنی تا در نخستین زمان ممکن باهات تماس بگیریم و ماجراجویی رو شروع کنیم!",
-    links: [
-      {
-        link: "mailto:duckdukstay@hotmail.com",
-        label: "ارسال ایمیل",
-      },
-      {
-        link: "/contact",
-        label: "فرم تماس",
-      },
-    ],
   },
 };
 
@@ -276,21 +245,6 @@ export const categories = [
 ];
 
 export const sortby = ["تازه ترین", "کهنه ترین", "بیشترین پیشنهاد"];
-
-export const blogOverall = {
-  title: "هرچی بخوای میتونی بالا پیداش کنی",
-  describe: "اگه چیزی میخوای که تو مطالب سایت نیست بهتره باهامون تماس بگیری",
-  links: [
-    {
-      link: "mailto:duckdukstay@hotmail.com",
-      label: "ارسال ایمیل",
-    },
-    {
-      link: "/contact",
-      label: "فرم تماس",
-    },
-  ],
-};
 
 export const registerForm = [
   {
@@ -317,43 +271,7 @@ export const registerForm = [
     type: "sender_email",
     required: true,
   },
-  {
-    label: "کلاس ی دلخواه",
-    type: "select",
-    name: "selected_course",
-    options: [
-      "HTML,CSS",
-      "JavaScript",
-      "Tailwind",
-      "Bootstrap",
-      "#C",
-      "++C",
-      "Java",
-      "Python مبدتی",
-      "Python پیشرفته",
-      "Unreal Engin 5",
-      "Unity 6",
-      "Scratch",
-    ],
-    required: true,
-  },
 ];
-
-export const coursesOverall = {
-  title: "با دقت انتخاب کن دوست من!",
-  describe:
-    "میتونی با کارشناسای ما تماس بگیری بهت راهنمایی کنیم بهترین کلاس رو برگزینی.",
-  links: [
-    {
-      link: "mailto:duckdukstay@hotmail.com",
-      label: "ارسال ایمیل",
-    },
-    {
-      link: "/contact",
-      label: "فرم تماس",
-    },
-  ],
-};
 
 export const contactInfo = [
   { label: "شماره تماس", describe: "+98 938 422 6123" },
@@ -423,22 +341,6 @@ export const teamMembers = [
     bio: "برنامه‌نویس ارشد بلاکچین و هوش مصنوعی که در جهت ارائه‌ی بهترین آموزش ممکن و فرای آن در امپراتوری کد به شما دوستان گرامی در جایگاه سرپست تیم آموزشی خدمت میکنم.",
   },
 ];
-
-export const policyOverall = {
-  title: "این منشور امپراتوریست",
-  describe:
-    "این منشور با راستی و دادگری گردآوری شده برای بهترین همکاری. اگه برای پیوستن به ما آماده ای پس آغاز کن.",
-  links: [
-    {
-      link: "/courses",
-      label: "شرکت در کلاس",
-    },
-    {
-      link: "/contact/register-form",
-      label: "رزور کلاس",
-    },
-  ],
-};
 
 export const shareButtons = [
   {

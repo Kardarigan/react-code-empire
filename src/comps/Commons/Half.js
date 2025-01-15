@@ -23,7 +23,7 @@ const Half = ({ thing, reverse = false }) => {
             </span>
           </h3>
           <p className="my-5 para max-w-[500px]">{thing.describe}</p>
-          <Link to="/contact" className="button button-dark">
+          <Link to="/courses" className="button button-dark">
             مشاهده‌ی کلاس ها
           </Link>
         </div>
