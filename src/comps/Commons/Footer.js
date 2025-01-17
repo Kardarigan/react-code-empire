@@ -38,7 +38,7 @@ const Footer = () => {
                   <ul className="grid gap-y-3">
                     {item.ways.map((way, i) => {
                       return (
-                        <li className="flex-seperate gap-8">
+                        <li key={i} className="flex-seperate gap-8">
                           <h6 className="flex items-center gap-2">
                             <i
                               className={

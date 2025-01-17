@@ -3,9 +3,6 @@ import { policy } from "../data/Policy";
 import { Article, Breadcrumb, Hero, Rules_Scroll } from "../comps/Portal";
 
 const Single_Rule = () => {
-  const categoryFilter = (categoryName) => {
-    return policy.filter((e) => e.category === categoryName);
-  };
   const { rule } = useParams();
   const theRule = policy.find(
     (e) =>

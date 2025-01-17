@@ -3,7 +3,7 @@ const Footer_Journal = () => {
 
   return (
     <div className="absolute lg:bottom-72 bottom-[90vh] right-0 w-full">
-      <div className="md:w-[50vw] w-[90vw] mx-auto bg text-slate-100 p-12 rounded-3xl gird grid-cols-2">
+      <div className="lg:w-[50vw] w-[90vw] mx-auto bg text-slate-100 p-12 rounded-3xl gird grid-cols-2">
         <div className="text-center">
           <h4 className="title">عضویت در ماهنامه‌ی امپراتوری</h4>
           <div className="flex-fullcenter mt-3">

@@ -1,6 +1,6 @@
 {
   "short_name": "Code Empire",
-  "name": "The Empire of Codes and Coders",
+  "name": "امپراتوری کد",
   "icons": [
     {
       "src": "favicon.ico",
@@ -14,6 +14,7 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#3B82F6",
+  "background_color": "#ffffff",
+  "description": "امپراتوری کد به تمامی برنامه‌نویسان کمک می‌کند تا با یادگیری مهارت‌های حرفه‌ای، آینده‌ای متفاوت بسازند."
 }
